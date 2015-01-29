@@ -252,3 +252,4 @@ translabel(grammar *g, label *lb)
         printf("Can't translate label '%s'\n",
                PyGrammar_LabelRepr(lb));
 }
+

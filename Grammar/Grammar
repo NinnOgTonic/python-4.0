@@ -140,3 +140,4 @@ testlist1: test (',' test)*
 encoding_decl: NAME
 
 yield_expr: 'yield' [testlist]
+

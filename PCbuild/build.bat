@@ -16,3 +16,4 @@ if "%1"=="-d" (set conf=Debug) & shift & goto CheckOpts
 set cmd=vcbuild /useenv pcbuild.sln %build% "%conf%|%platf%"
 echo %cmd%
 %cmd%
+
