@@ -661,7 +661,7 @@ range.  Here's the last chunk of output before I killed the job:
 
 count 2630 nelts 130906543
  sort    6110.80   1937887573
-msort    6002.78   1909389381
+msort    6004.08   1909389381
             1.80         1.49
 
 We've done nearly 2 billion comparisons apiece at Python speed there, and

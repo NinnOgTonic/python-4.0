@@ -154,7 +154,7 @@ class AbstractCompatTests(AbstractPickleTests):
     def test_unicode_high_plane(self):
         pass
 
-    # This tests a fix that's in 2.7 only
+    # This tests a fix that's in 4.0 only
     def test_dynamic_class(self):
         pass
 

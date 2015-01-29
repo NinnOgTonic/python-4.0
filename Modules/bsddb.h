@@ -41,7 +41,7 @@
  * This module was started by Andrew Kuchling to remove the dependency
  * on SWIG in a package by Gregory P. Smith who based his work on a
  * similar package by Robin Dunn <robin@alldunn.com> which wrapped
- * Berkeley DB 2.7.x.
+ * Berkeley DB 4.0.x.
  *
  * Development of this module then returned full circle back to Robin Dunn
  * who worked on behalf of Digital Creations to complete the wrapping of

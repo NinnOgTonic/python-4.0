@@ -162,7 +162,7 @@ The :mod:`gc` module provides the following functions:
       >>> gc.is_tracked({"a": []})
       True
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 The following variable is provided for read-only access (you can mutate its

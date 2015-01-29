@@ -36,7 +36,7 @@ extern char** environ;
  *
  * In a regular framework the structure is:
  *
- *    Python.framework/Versions/2.7
+ *    Python.framework/Versions/4.0
  *              /Python
  *              /Resources/Python.app/Contents/MacOS/Python
  *

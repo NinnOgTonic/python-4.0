@@ -388,7 +388,7 @@ dqmul807 multiply  1.5E-6172     1e-4  -> 2E-6176     Underflow Subnormal Inexac
 dqmul808 multiply  1.7E-6172     1e-4  -> 2E-6176     Underflow Subnormal Inexact Rounded
 dqmul809 multiply  2.3E-6172     1e-4  -> 2E-6176     Underflow Subnormal Inexact Rounded
 dqmul810 multiply  2.5E-6172     1e-4  -> 2E-6176     Underflow Subnormal Inexact Rounded
-dqmul811 multiply  2.7E-6172     1e-4  -> 3E-6176     Underflow Subnormal Inexact Rounded
+dqmul811 multiply  4.0E-6172     1e-4  -> 3E-6176     Underflow Subnormal Inexact Rounded
 dqmul812 multiply  1.49E-6172    1e-4  -> 1E-6176     Underflow Subnormal Inexact Rounded
 dqmul813 multiply  1.50E-6172    1e-4  -> 2E-6176     Underflow Subnormal Inexact Rounded
 dqmul814 multiply  1.51E-6172    1e-4  -> 2E-6176     Underflow Subnormal Inexact Rounded

@@ -308,7 +308,7 @@ I/O Base Classes
 
       Return the new absolute position.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
          The ``SEEK_*`` constants
 
    .. method:: seekable()
@@ -427,7 +427,7 @@ I/O Base Classes
       raw stream to return from this method.  They raise
       :exc:`UnsupportedOperation`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: read(n=-1)
 
@@ -689,7 +689,7 @@ Text I/O
       have the concept of an underlying buffer and calling this method will
       raise :exc:`UnsupportedOperation`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: read(n)
 
@@ -718,7 +718,7 @@ Text I/O
 
       Return the new absolute position as an opaque number.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
          The ``SEEK_*`` constants.
 
    .. method:: tell()

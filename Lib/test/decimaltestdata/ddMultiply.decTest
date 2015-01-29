@@ -380,7 +380,7 @@ ddmul807 multiply  1.5E-394     1e-4  -> 2E-398     Underflow Subnormal Inexact 
 ddmul808 multiply  1.7E-394     1e-4  -> 2E-398     Underflow Subnormal Inexact Rounded
 ddmul809 multiply  2.3E-394     1e-4  -> 2E-398     Underflow Subnormal Inexact Rounded
 ddmul810 multiply  2.5E-394     1e-4  -> 2E-398     Underflow Subnormal Inexact Rounded
-ddmul811 multiply  2.7E-394     1e-4  -> 3E-398     Underflow Subnormal Inexact Rounded
+ddmul811 multiply  4.0E-394     1e-4  -> 3E-398     Underflow Subnormal Inexact Rounded
 ddmul812 multiply  1.49E-394    1e-4  -> 1E-398     Underflow Subnormal Inexact Rounded
 ddmul813 multiply  1.50E-394    1e-4  -> 2E-398     Underflow Subnormal Inexact Rounded
 ddmul814 multiply  1.51E-394    1e-4  -> 2E-398     Underflow Subnormal Inexact Rounded

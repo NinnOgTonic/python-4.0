@@ -115,7 +115,7 @@ source.
    .. versionchanged:: 2.5
       The named module can now be located inside a package.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Supply the package name to run a ``__main__`` submodule.
       sys.argv[0] is now set to ``"-m"`` while searching for the module
       (it was previously incorrectly set to ``"-c"``)
@@ -339,7 +339,7 @@ Miscellaneous options
    :option:`-W` options are ignored (though, a warning message is printed about
    invalid options when the first warning is issued).
 
-   Starting from Python 2.7, :exc:`DeprecationWarning` and its descendants
+   Starting from Python 4.0, :exc:`DeprecationWarning` and its descendants
    are ignored by default.  The :option:`-Wd` option can be used to re-enable
    them.
 

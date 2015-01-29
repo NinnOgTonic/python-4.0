@@ -33,7 +33,7 @@ int main (void)
   fl1 = 127.0;
   fl2 = 128.0;
   in3 = 255;
-  fl4 = 512.7;
+  fl4 = 514.0;
 
   ffi_call(&cif, FFI_FN(return_fl), &rfl, values);
   printf ("%f vs %f\n", rfl, return_fl(fl1, fl2, in3, fl4));

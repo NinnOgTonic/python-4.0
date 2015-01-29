@@ -41,7 +41,7 @@ See http://effbot.org/zone/element-index.htm for tutorials and links to other
 docs.  Fredrik Lundh's page is also the location of the development version of
 the xml.etree.ElementTree.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    The ElementTree API is updated to 1.3.  For more information, see
    `Introducing ElementTree 1.3
    <http://effbot.org/zone/elementtree-13-intro.htm>`_.
@@ -86,7 +86,7 @@ Functions
    optional parser instance.  If not given, the standard :class:`XMLParser`
    parser is used.  Returns an :class:`Element` instance.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: iselement(element)
@@ -139,7 +139,7 @@ Functions
    attributes in this namespace will be serialized with the given prefix, if at
    all possible.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: SubElement(parent, tag, attrib={}, **extra)
@@ -173,7 +173,7 @@ Functions
    sequence, except that ``"".join(tostringlist(element)) ==
    tostring(element)``.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: XML(text, parser=None)
@@ -288,7 +288,7 @@ Element Objects
       Appends *subelements* from a sequence object with zero or more elements.
       Raises :exc:`AssertionError` if a subelement is not a valid object.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: find(match)
@@ -313,13 +313,13 @@ Element Objects
 
    .. method:: getchildren()
 
-      .. deprecated:: 2.7
+      .. deprecated:: 4.0
          Use ``list(elem)`` or iteration.
 
 
    .. method:: getiterator(tag=None)
 
-      .. deprecated:: 2.7
+      .. deprecated:: 4.0
          Use method :meth:`Element.iter` instead.
 
 
@@ -336,7 +336,7 @@ Element Objects
       elements whose tag equals *tag* are returned from the iterator.  If the
       tree structure is modified during iteration, the result is undefined.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: iterfind(match)
@@ -344,7 +344,7 @@ Element Objects
       Finds all matching subelements, by tag name or path.  Returns an iterable
       yielding all matching elements in document order.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: itertext()
@@ -352,7 +352,7 @@ Element Objects
       Creates a text iterator.  The iterator loops over this element and all
       subelements, in document order, and returns all inner text.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: makeelement(tag, attrib)
@@ -433,7 +433,7 @@ ElementTree Objects
 
    .. method:: getiterator(tag=None)
 
-      .. deprecated:: 2.7
+      .. deprecated:: 4.0
          Use method :meth:`ElementTree.iter` instead.
 
 
@@ -455,7 +455,7 @@ ElementTree Objects
       getroot().iterfind(match). Returns an iterable yielding all matching
       elements in document order.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: parse(source, parser=None)
@@ -568,7 +568,7 @@ TreeBuilder Objects
       the public identifier.  *system* is the system identifier.  This method
       does not exist on the default :class:`TreeBuilder` class.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
 .. _elementtree-xmlparser-objects:
@@ -594,7 +594,7 @@ XMLParser Objects
 
    .. method:: doctype(name, pubid, system)
 
-      .. deprecated:: 2.7
+      .. deprecated:: 4.0
          Define the :meth:`TreeBuilder.doctype` method on a custom TreeBuilder
          target.
 

@@ -159,7 +159,7 @@ Long Integer Objects
    MemoryError), then ``-1`` will be returned and *\*overflow* will
    be ``0``.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. c:function:: PY_LONG_LONG PyLong_AsLongLongAndOverflow(PyObject *pylong, int *overflow)
@@ -172,7 +172,7 @@ Long Integer Objects
    MemoryError), then ``-1`` will be returned and *\*overflow* will
    be ``0``.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. c:function:: Py_ssize_t PyLong_AsSsize_t(PyObject *pylong)
@@ -235,7 +235,7 @@ Long Integer Objects
 
    .. versionadded:: 2.2
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       A negative *pylong* now raises :exc:`OverflowError`, not
       :exc:`TypeError`.
 

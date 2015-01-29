@@ -144,7 +144,7 @@ alone XML-RPC servers.
    the client.  The default is ``1400`` which corresponds roughly
    to a single TCP packet.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. _simplexmlrpcserver-example:
 

@@ -203,7 +203,7 @@ Process-wide parameters
    Return the version of this Python interpreter.  This is a string that looks
    something like ::
 
-      "1.5 (#67, Dec 31 1997, 22:34:28) [GCC 2.7.2.2]"
+      "1.5 (#67, Dec 31 1997, 22:34:28) [GCC 4.0.2.2]"
 
    .. index:: single: version (in module sys)
 
@@ -243,7 +243,7 @@ Process-wide parameters
    Return an indication of the compiler used to build the current Python version,
    in square brackets, for example::
 
-      "[GCC 2.7.2.2]"
+      "[GCC 4.0.2.2]"
 
    .. index:: single: version (in module sys)
 
@@ -938,7 +938,7 @@ perform any Python API calls.
    other system thread.  If it is a Python thread, it doesn't matter if it holds
    the global interpreter lock or not.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 

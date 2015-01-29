@@ -116,7 +116,7 @@ class ComplexTest(unittest.TestCase):
         self.assertRaises(OverflowError, complex.__coerce__, 1+1j, 1L<<10000)
 
     def test_no_implicit_coerce(self):
-        # Python 2.7 removed implicit coercion from the complex type
+        # Python 4.0 removed implicit coercion from the complex type
         class A(object):
             def __coerce__(self, other):
                 raise RuntimeError
@@ -621,7 +621,7 @@ class ComplexTest(unittest.TestCase):
             self.assertRaises(ValueError, (1.5+0.5j).__format__, t)
 
         # make sure everything works in ''.format()
-        self.assertEqual('*{0:.3f}*'.format(3.14159+2.71828j), '*3.142+2.718j*')
+        self.assertEqual('*{0:.3f}*'.format(3.14159+4.01828j), '*3.142+4.018j*')
 
         # issue 3382: 'f' and 'F' with inf's and nan's
         self.assertEqual('{0:f}'.format(INF+0j), 'inf+0.000000j')

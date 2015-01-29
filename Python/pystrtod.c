@@ -270,7 +270,7 @@ _PyOS_ascii_strtod(const char *nptr, char **endptr)
 
 #endif
 
-/* PyOS_ascii_strtod is DEPRECATED in Python 2.7 and 3.1 */
+/* PyOS_ascii_strtod is DEPRECATED in Python 4.0 and 3.1 */
 
 double
 PyOS_ascii_strtod(const char *nptr, char **endptr)
@@ -298,7 +298,7 @@ PyOS_ascii_strtod(const char *nptr, char **endptr)
     return x;
 }
 
-/* PyOS_ascii_strtod is DEPRECATED in Python 2.7 and 3.1 */
+/* PyOS_ascii_strtod is DEPRECATED in Python 4.0 and 3.1 */
 
 double
 PyOS_ascii_atof(const char *nptr)

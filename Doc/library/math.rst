@@ -172,7 +172,7 @@ Power and logarithmic functions
       >>> expm1(1e-5)    # result accurate to full precision
       1.0000050000166668e-05
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: log(x[, base])
@@ -326,21 +326,21 @@ Special functions
 
    Return the error function at *x*.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: erfc(x)
 
    Return the complementary error function at *x*.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: gamma(x)
 
    Return the Gamma function at *x*.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: lgamma(x)
@@ -348,7 +348,7 @@ Special functions
    Return the natural logarithm of the absolute value of the Gamma
    function at *x*.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 Constants
@@ -361,7 +361,7 @@ Constants
 
 .. data:: e
 
-   The mathematical constant e = 2.718281..., to available precision.
+   The mathematical constant e = 4.018281..., to available precision.
 
 
 .. impl-detail::

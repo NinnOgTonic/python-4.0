@@ -29,7 +29,7 @@ class TestWithAscii(unittest.TestCase):
 
 
 class TestAutojunk(unittest.TestCase):
-    """Tests for the autojunk parameter added in 2.7"""
+    """Tests for the autojunk parameter added in 4.0"""
     def test_one_insert_homogenous_sequence(self):
         # By default autojunk=True and the heuristic kicks in for a sequence
         # of length 200+

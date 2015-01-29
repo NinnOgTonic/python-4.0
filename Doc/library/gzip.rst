@@ -73,10 +73,10 @@ The module defines the following items:
 
    :class:`GzipFile` supports iteration and the :keyword:`with` statement.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Support for the :keyword:`with` statement was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Support for zero-padded files was added.
 
 

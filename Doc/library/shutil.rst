@@ -280,7 +280,7 @@ Archives operations
 
    *logger* is an instance of :class:`logging.Logger`.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: get_archive_formats()
@@ -298,7 +298,7 @@ Archives operations
    You can register new formats or provide your own archiver for any existing
    formats, by using :func:`register_archive_format`.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: register_archive_format(name, function, [extra_args, [description]])
@@ -312,14 +312,14 @@ Archives operations
    *description* is used by :func:`get_archive_formats` which returns the
    list of archivers. Defaults to an empty list.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function::  unregister_archive_format(name)
 
    Remove the archive format *name* from the list of supported formats.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 Archiving example

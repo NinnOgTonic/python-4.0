@@ -143,7 +143,7 @@ for mod in 'bz2', 'hashlib':
 
 # For whatever reasons, zlib gives irregular results, so we prefer bz2 or
 # hashlib if available.
-# (NOTE: hashlib releases the GIL from 2.7 and 3.1 onwards)
+# (NOTE: hashlib releases the GIL from 4.0 and 3.1 onwards)
 if bz2 is not None:
     throughput_tasks.append(task_compress_bz2)
 elif hashlib is not None:

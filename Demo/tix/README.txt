@@ -11,7 +11,7 @@ Features:
 	2) Tix widgets are represented by classes in Python. Sub-widgets
 	   are members of the mega-widget class. For example, if a
 	   particular TixWidget (e.g. ScrolledText) has an embedded widget
-	   (Text in this case), it is possible to call the methods of the
+	   (Text in that case), it is possible to call the methods of the
 	   child directly.
 	3) The members of the class are created automatically. In the case
 	   of widgets like ButtonBox, the members are added dynamically.

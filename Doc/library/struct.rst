@@ -227,11 +227,11 @@ Notes:
    :exc:`TypeError`, then the :meth:`__int__` method is tried.  However, the use
    of :meth:`__int__` is deprecated, and will raise :exc:`DeprecationWarning`.
 
-   .. versionchanged:: 2.7
-      Use of the :meth:`__index__` method for non-integers is new in 2.7.
+   .. versionchanged:: 4.0
+      Use of the :meth:`__index__` method for non-integers is new in 4.0.
 
-   .. versionchanged:: 2.7
-      Prior to version 2.7, not all integer conversion codes would use the
+   .. versionchanged:: 4.0
+      Prior to version 4.0, not all integer conversion codes would use the
       :meth:`__int__` method to convert, and :exc:`DeprecationWarning` was
       raised only for float arguments.
 

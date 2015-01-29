@@ -450,7 +450,7 @@ way.  From the PyXML setup script::
           scripts=['scripts/xmlproc_parse', 'scripts/xmlproc_val']
           )
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
     All the scripts will also be added to the ``MANIFEST``
     file if no template is provided. See :ref:`manifest`.
 
@@ -498,7 +498,7 @@ The corresponding call to :func:`setup` might be::
 
 .. versionadded:: 2.4
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
     All the files that match ``package_data`` will be added to the ``MANIFEST``
     file if no template is provided. See :ref:`manifest`.
 
@@ -539,7 +539,7 @@ without specifying a target directory, but this is not recommended, and the
 files directly in the target directory, an empty string should be given as the
 directory.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
     All the files that match ``data_files`` will be added to the ``MANIFEST``
     file if no template is provided. See :ref:`manifest`.
 

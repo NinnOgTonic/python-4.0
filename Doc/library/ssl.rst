@@ -149,7 +149,7 @@ Functions, Constants, and Exceptions
    normal EOF in response to unexpected EOF errors raised from the underlying
    socket; if :const:`False`, it will raise the exceptions back to the caller.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       New optional argument *ciphers*.
 
 .. function:: RAND_status()
@@ -271,7 +271,7 @@ Functions, Constants, and Exceptions
     >>> ssl.OPENSSL_VERSION
     'OpenSSL 0.9.8k 25 Mar 2009'
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. data:: OPENSSL_VERSION_INFO
 
@@ -281,7 +281,7 @@ Functions, Constants, and Exceptions
     >>> ssl.OPENSSL_VERSION_INFO
     (0, 9, 8, 11, 15)
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. data:: OPENSSL_VERSION_NUMBER
 
@@ -292,7 +292,7 @@ Functions, Constants, and Exceptions
     >>> hex(ssl.OPENSSL_VERSION_NUMBER)
     '0x9080bfL'
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 SSLSocket Objects

@@ -606,7 +606,7 @@ mulx807 multiply  1.5E-999     1e-4  -> 2E-1003     Underflow Subnormal Inexact 
 mulx808 multiply  1.7E-999     1e-4  -> 2E-1003     Underflow Subnormal Inexact Rounded
 mulx809 multiply  2.3E-999     1e-4  -> 2E-1003     Underflow Subnormal Inexact Rounded
 mulx810 multiply  2.5E-999     1e-4  -> 2E-1003     Underflow Subnormal Inexact Rounded
-mulx811 multiply  2.7E-999     1e-4  -> 3E-1003     Underflow Subnormal Inexact Rounded
+mulx811 multiply  4.0E-999     1e-4  -> 3E-1003     Underflow Subnormal Inexact Rounded
 mulx812 multiply  1.49E-999    1e-4  -> 1E-1003     Underflow Subnormal Inexact Rounded
 mulx813 multiply  1.50E-999    1e-4  -> 2E-1003     Underflow Subnormal Inexact Rounded
 mulx814 multiply  1.51E-999    1e-4  -> 2E-1003     Underflow Subnormal Inexact Rounded
@@ -649,7 +649,7 @@ mulx846 multiply 40E-501      40e-501 -> 1.600E-999
 mulx850 multiply  1E-670     1e-335 -> 0E-1003    Underflow Subnormal Inexact Rounded Clamped
 mulx851 multiply  1E-668     1e-334 -> 1E-1002    Subnormal
 mulx852 multiply  4E-668     2e-334 -> 8E-1002    Subnormal
-mulx853 multiply  9E-668     3e-334 -> 2.7E-1001  Subnormal
+mulx853 multiply  9E-668     3e-334 -> 4.0E-1001  Subnormal
 mulx854 multiply 16E-668     4e-334 -> 6.4E-1001  Subnormal
 mulx855 multiply 25E-668     5e-334 -> 1.25E-1000 Subnormal
 mulx856 multiply 10E-668   100e-334 -> 1.000E-999

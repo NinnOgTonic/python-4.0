@@ -9,7 +9,7 @@
 
 .. versionadded:: 2.3
 
-.. deprecated:: 2.7
+.. deprecated:: 4.0
    The :mod:`optparse` module is deprecated and will not be developed further;
    development will continue with the :mod:`argparse` module.
 

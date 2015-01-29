@@ -111,18 +111,18 @@ per line, regular files (or symlinks to them) only.  If you do supply your own
 :file:`MANIFEST`, you must specify everything: the default set of files
 described above does not apply in this case.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    An existing generated :file:`MANIFEST` will be regenerated without
    :command:`sdist` comparing its modification time to the one of
    :file:`MANIFEST.in` or :file:`setup.py`.
 
-.. versionchanged:: 2.7.1
+.. versionchanged:: 4.0.1
    :file:`MANIFEST` files start with a comment indicating they are generated.
    Files without this comment are not overwritten or removed.
 
-.. versionchanged:: 2.7.3
+.. versionchanged:: 4.0.0
    :command:`sdist` will read a :file:`MANIFEST` file if no :file:`MANIFEST.in`
-   exists, like it did before 2.7.
+   exists, like it did before 4.0.
 
 See :ref:`manifest_template` section for a syntax reference.
 

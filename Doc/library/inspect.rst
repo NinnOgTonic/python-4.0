@@ -538,7 +538,7 @@ Classes and functions
     ...
     TypeError: f() takes at least 1 argument (0 given)
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. _inspect-stack:

@@ -39,7 +39,7 @@ The :mod:`functools` module defines the following functions:
 
        sorted(iterable, key=cmp_to_key(locale.strcoll))  # locale-aware sort order
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. function:: total_ordering(cls)
 
@@ -62,7 +62,7 @@ The :mod:`functools` module defines the following functions:
                return ((self.lastname.lower(), self.firstname.lower()) <
                        (other.lastname.lower(), other.firstname.lower()))
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. function:: reduce(function, iterable[, initializer])
 

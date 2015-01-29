@@ -351,7 +351,7 @@ The :mod:`test.test_support` module defines the following functions:
    warnings directly.
 
    .. versionadded:: 2.6
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       New optional arguments *filters* and *quiet*.
 
 
@@ -367,7 +367,7 @@ The :mod:`test.test_support` module defines the following functions:
 
       check_py3k_warnings(("", DeprecationWarning), quiet=False)
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: captured_stdout()
@@ -394,7 +394,7 @@ The :mod:`test.test_support` module defines the following functions:
    Module and package deprecation messages are suppressed during this import
    if *deprecated* is :const:`True`.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: import_fresh_module(name, fresh=(), blocked=(), deprecated=False)
@@ -430,7 +430,7 @@ The :mod:`test.test_support` module defines the following functions:
       py_warnings = import_fresh_module('warnings', blocked=['_warnings'])
       c_warnings = import_fresh_module('warnings', fresh=['_warnings'])
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 The :mod:`test.test_support` module defines the following classes:
@@ -453,7 +453,7 @@ The :mod:`test.test_support` module defines the following classes:
    instance will be rolled back.
 
    .. versionadded:: 2.6
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added dictionary interface.
 
 

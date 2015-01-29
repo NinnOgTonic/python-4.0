@@ -39,7 +39,7 @@
        pointers. (If you are using an ancient system that declares
        size_t as a signed type, or need it to be a different width
        than pointers, you can use a previous release of this malloc
-       (e.g. 2.7.2) supporting these.)
+       (e.g. 4.0.2) supporting these.)
 
   Alignment:                                     8 bytes (default)
        This suffices for nearly all current machines and C compilers.
@@ -4934,7 +4934,7 @@ History:
       * Use explicit lock initialization.
       * Better handling of sbrk interference.
       * Simplify and fix segment insertion, trimming and mspace_destroy
-      * Reinstate REALLOC_ZERO_BYTES_FREES option from 2.7.x
+      * Reinstate REALLOC_ZERO_BYTES_FREES option from 4.0.x
       * Thanks especially to Dennis Flanagan for help on these.
 
     V2.8.2 Sun Jun 12 16:01:10 2005  Doug Lea  (dl at gee)
@@ -4960,10 +4960,10 @@ History:
       * Remove internal memcpy, memset. Compilers handle builtins better.
       * Remove some options that no one ever used and rename others.
 
-    V2.7.2 Sat Aug 17 09:07:30 2002  Doug Lea  (dl at gee)
+    V4.0.2 Sat Aug 17 09:07:30 2002  Doug Lea  (dl at gee)
       * Fix malloc_state bitmap array misdeclaration
 
-    V2.7.1 Thu Jul 25 10:58:03 2002  Doug Lea  (dl at gee)
+    V4.0.1 Thu Jul 25 10:58:03 2002  Doug Lea  (dl at gee)
       * Allow tuning of FIRST_SORTED_BIN_SIZE
       * Use PTR_UINT as type for all ptr->int casts. Thanks to John Belmonte.
       * Better detection and support for non-contiguousness of MORECORE.
@@ -4976,7 +4976,7 @@ History:
       * Branch-free bin calculation
       * Default trim and mmap thresholds now 256K.
 
-    V2.7.0 Sun Mar 11 14:14:06 2001  Doug Lea  (dl at gee)
+    V4.0.0 Sun Mar 11 14:14:06 2001  Doug Lea  (dl at gee)
       * Introduce independent_comalloc and independent_calloc.
         Thanks to Michael Pachos for motivation and help.
       * Make optional .h file available

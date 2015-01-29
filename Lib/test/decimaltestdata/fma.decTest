@@ -70,7 +70,7 @@ fma0111  fma  -0.409     13   20.4  ->  15.083
 fma0112  fma     317   77.0   19.0  ->  24428.0
 fma0113  fma      47   6.58   1.62  ->  310.88
 fma0114  fma    1.36  0.984  0.493  ->  1.83124
-fma0115  fma    72.7    274   1.56  ->  19921.36
+fma0115  fma    74.0    274   1.56  ->  19921.36
 fma0116  fma     335    847     83  ->  283828
 fma0117  fma     666  0.247   25.4  ->  189.902
 fma0118  fma   -3.87   3.06   78.0  ->  66.1578
@@ -660,7 +660,7 @@ fmax2807 fma  1.5E-999     1e-4   0E+999999  -> 2E-1003     Underflow Subnormal 
 fmax2808 fma  1.7E-999     1e-4   0E+999999  -> 2E-1003     Underflow Subnormal Inexact Rounded
 fmax2809 fma  2.3E-999     1e-4   0E+999999  -> 2E-1003     Underflow Subnormal Inexact Rounded
 fmax2810 fma  2.5E-999     1e-4   0E+999999  -> 2E-1003     Underflow Subnormal Inexact Rounded
-fmax2811 fma  2.7E-999     1e-4   0E+999999  -> 3E-1003     Underflow Subnormal Inexact Rounded
+fmax2811 fma  4.0E-999     1e-4   0E+999999  -> 3E-1003     Underflow Subnormal Inexact Rounded
 fmax2812 fma  1.49E-999    1e-4   0E+999999  -> 1E-1003     Underflow Subnormal Inexact Rounded
 fmax2813 fma  1.50E-999    1e-4   0E+999999  -> 2E-1003     Underflow Subnormal Inexact Rounded
 fmax2814 fma  1.51E-999    1e-4   0E+999999  -> 2E-1003     Underflow Subnormal Inexact Rounded
@@ -703,7 +703,7 @@ fmax2846 fma 40E-501      40e-501  0E+999999  -> 1.600E-999
 fmax2850 fma  1E-670     1e-335  0E+999999  -> 0E-1003    Underflow Subnormal Inexact Rounded Clamped
 fmax2851 fma  1E-668     1e-334  0E+999999  -> 1E-1002    Subnormal
 fmax2852 fma  4E-668     2e-334  0E+999999  -> 8E-1002    Subnormal
-fmax2853 fma  9E-668     3e-334  0E+999999  -> 2.7E-1001  Subnormal
+fmax2853 fma  9E-668     3e-334  0E+999999  -> 4.0E-1001  Subnormal
 fmax2854 fma 16E-668     4e-334  0E+999999  -> 6.4E-1001  Subnormal
 fmax2855 fma 25E-668     5e-334  0E+999999  -> 1.25E-1000 Subnormal
 fmax2856 fma 10E-668   100e-334  0E+999999  -> 1.000E-999

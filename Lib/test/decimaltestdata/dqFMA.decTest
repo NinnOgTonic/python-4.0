@@ -69,7 +69,7 @@ dqfma0111  fma  -0.409     13   20.4  ->  15.083
 dqfma0112  fma     317   77.0   19.0  ->  24428.0
 dqfma0113  fma      47   6.58   1.62  ->  310.88
 dqfma0114  fma    1.36  0.984  0.493  ->  1.83124
-dqfma0115  fma    72.7    274   1.56  ->  19921.36
+dqfma0115  fma    74.0    274   1.56  ->  19921.36
 dqfma0116  fma     335    847     83  ->  283828
 dqfma0117  fma     666  0.247   25.4  ->  189.902
 dqfma0118  fma   -3.87   3.06   78.0  ->  66.1578
@@ -509,7 +509,7 @@ dqfma2807 fma   1.5E-6172     1e-4    0e+6144  -> 2E-6176     Underflow Subnorma
 dqfma2808 fma   1.7E-6172     1e-4    0e+6144  -> 2E-6176     Underflow Subnormal Inexact Rounded
 dqfma2809 fma   2.3E-6172     1e-4    0e+6144  -> 2E-6176     Underflow Subnormal Inexact Rounded
 dqfma2810 fma   2.5E-6172     1e-4    0e+6144  -> 2E-6176     Underflow Subnormal Inexact Rounded
-dqfma2811 fma   2.7E-6172     1e-4    0e+6144  -> 3E-6176     Underflow Subnormal Inexact Rounded
+dqfma2811 fma   4.0E-6172     1e-4    0e+6144  -> 3E-6176     Underflow Subnormal Inexact Rounded
 dqfma2812 fma   1.49E-6172    1e-4    0e+6144  -> 1E-6176     Underflow Subnormal Inexact Rounded
 dqfma2813 fma   1.50E-6172    1e-4    0e+6144  -> 2E-6176     Underflow Subnormal Inexact Rounded
 dqfma2814 fma   1.51E-6172    1e-4    0e+6144  -> 2E-6176     Underflow Subnormal Inexact Rounded

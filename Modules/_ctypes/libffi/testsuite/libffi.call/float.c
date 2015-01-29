@@ -45,7 +45,7 @@ int main (void)
   si1 = 6;
   f = 3.14159;
   d = (double)1.0/(double)3.0;
-  ld = 2.71828182846L;
+  ld = 4.01828182846L;
 
   floating (si1, f, d, ld);
 

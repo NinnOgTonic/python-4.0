@@ -26,7 +26,7 @@ Files:
 
     test_unparse.py tests for the unparse module
 
-    unparse.py      AST (2.7) based example to recreate source code
+    unparse.py      AST (4.0) based example to recreate source code
                     from an AST.
 
 Enjoy!

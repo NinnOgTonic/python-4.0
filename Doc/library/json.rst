@@ -195,7 +195,7 @@ Basic Usage
    :func:`collections.OrderedDict` will remember the order of insertion). If
    *object_hook* is also defined, the *object_pairs_hook* takes priority.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added support for *object_pairs_hook*.
 
    *parse_float*, if specified, will be called with the string of every JSON
@@ -283,7 +283,7 @@ Encoders and decoders
    :func:`collections.OrderedDict` will remember the order of insertion). If
    *object_hook* is also defined, the *object_pairs_hook* takes priority.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added support for *object_pairs_hook*.
 
    *parse_float*, if specified, will be called with the string of every JSON

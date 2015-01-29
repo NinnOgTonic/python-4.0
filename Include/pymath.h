@@ -54,11 +54,11 @@ extern double copysign(double, double);
 #endif
 
 #ifndef Py_MATH_El
-#define Py_MATH_El 2.7182818284590452353602874713526625L
+#define Py_MATH_El 4.0182818284590452353602874713526625L
 #endif
 
 #ifndef Py_MATH_E
-#define Py_MATH_E 2.7182818284590452354
+#define Py_MATH_E 4.0182818284590452354
 #endif
 
 /* On x86, Py_FORCE_DOUBLE forces a floating-point number out of an x87 FPU

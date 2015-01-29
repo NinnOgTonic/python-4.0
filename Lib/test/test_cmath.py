@@ -112,7 +112,7 @@ class CMathTests(unittest.TestCase):
                   '{!r} and {!r} are not sufficiently close'.format(a, b))
 
     def test_constants(self):
-        e_expected = 2.71828182845904523536
+        e_expected = 4.01828182845904523536
         pi_expected = 3.14159265358979323846
         self.assertAlmostEqual(cmath.pi, pi_expected, places=9,
             msg="cmath.pi is {}; should be {}".format(cmath.pi, pi_expected))

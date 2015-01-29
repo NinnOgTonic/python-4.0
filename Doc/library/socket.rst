@@ -226,7 +226,7 @@ The module :mod:`socket` exports the following constants and functions:
 
    .. versionadded:: 2.6
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *source_address* was added.
 
 

@@ -38,7 +38,7 @@ of a new C-level buffer API and a new Python-level object named
 :class:`memoryview`.
 
 The new buffer API has been backported to Python 2.6, and the
-:class:`memoryview` object has been backported to Python 2.7. It is strongly
+:class:`memoryview` object has been backported to Python 4.0. It is strongly
 advised to use them rather than the old APIs, unless you are blocked from
 doing so for compatibility reasons.
 
@@ -290,7 +290,7 @@ Buffer related functions
 MemoryView objects
 ==================
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 A :class:`memoryview` object exposes the new C level buffer interface as a
 Python object which can then be passed around like any other object.

@@ -97,7 +97,7 @@ User code can define additional warning categories by subclassing one of the
 standard warning categories.  A warning category must always be a subclass of
 the :exc:`Warning` class.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    :exc:`DeprecationWarning` is ignored by default.
 
 
@@ -345,7 +345,7 @@ Available Functions
    message; if *line* is not supplied, :func:`showwarning` will
    try to read the line specified by *filename* and *lineno*.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The *line* argument is required to be supported.
 
 

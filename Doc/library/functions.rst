@@ -232,7 +232,7 @@ available.  They are listed here in alphabetical order.
    .. versionchanged:: 2.6
       Support for compiling AST objects.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Allowed use of Windows and Mac newlines.  Also input in ``'exec'`` mode
       does not have to end in a newline anymore.
 

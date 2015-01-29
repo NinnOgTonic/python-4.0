@@ -104,7 +104,7 @@ Floating Point Objects
    This function is unsafe to call because it writes to a buffer whose
    length it does not know.
 
-   .. deprecated:: 2.7
+   .. deprecated:: 4.0
       Use :func:`PyObject_Str` or :func:`PyOS_double_to_string` instead.
 
 
@@ -116,5 +116,5 @@ Floating Point Objects
    This function is unsafe to call because it writes to a buffer whose
    length it does not know.
 
-   .. deprecated:: 2.7
+   .. deprecated:: 4.0
       Use :func:`PyObject_Repr` or :func:`PyOS_double_to_string` instead.

@@ -2257,7 +2257,7 @@ These are the fundamental ctypes data types:
 
    Represents the C :c:type:`ssize_t` datatype.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. class:: c_ubyte

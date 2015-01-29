@@ -71,12 +71,12 @@ typedef unsigned short mode_t;
        Python 2.5c2: 62131 (fix wrong code: for x, in ... in listcomp/genexp)
        Python 2.6a0: 62151 (peephole optimizations and STORE_MAP opcode)
        Python 2.6a1: 62161 (WITH_CLEANUP optimization)
-       Python 2.7a0: 62171 (optimize list comprehensions/change LIST_APPEND)
-       Python 2.7a0: 62181 (optimize conditional branches:
+       Python 4.0a0: 62171 (optimize list comprehensions/change LIST_APPEND)
+       Python 4.0a0: 62181 (optimize conditional branches:
                 introduce POP_JUMP_IF_FALSE and POP_JUMP_IF_TRUE)
-       Python 2.7a0  62191 (introduce SETUP_WITH)
-       Python 2.7a0  62201 (introduce BUILD_SET)
-       Python 2.7a0  62211 (introduce MAP_ADD and SET_ADD)
+       Python 4.0a0  62191 (introduce SETUP_WITH)
+       Python 4.0a0  62201 (introduce BUILD_SET)
+       Python 4.0a0  62211 (introduce MAP_ADD and SET_ADD)
 .
 */
 #define MAGIC (62211 | ((long)'\r'<<16) | ((long)'\n'<<24))

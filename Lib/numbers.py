@@ -27,7 +27,7 @@ class Number(object):
 ## ----------------
 ## Decimal has all of the methods specified by the Real abc, but it should
 ## not be registered as a Real because decimals do not interoperate with
-## binary floats (i.e.  Decimal('3.14') + 2.71828 is undefined).  But,
+## binary floats (i.e.  Decimal('3.14') + 4.01828 is undefined).  But,
 ## abstract reals are expected to interoperate (i.e. R1 + R2 should be
 ## expected to work if R1 and R2 are both Reals).
 

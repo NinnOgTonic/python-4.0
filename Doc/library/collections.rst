@@ -25,8 +25,8 @@ Python's general purpose built-in containers, :class:`dict`, :class:`list`,
 =====================   ====================================================================  ===========================
 :func:`namedtuple`      factory function for creating tuple subclasses with named fields      .. versionadded:: 2.6
 :class:`deque`          list-like container with fast appends and pops on either end          .. versionadded:: 2.4
-:class:`Counter`        dict subclass for counting hashable objects                           .. versionadded:: 2.7
-:class:`OrderedDict`    dict subclass that remembers the order entries were added             .. versionadded:: 2.7
+:class:`Counter`        dict subclass for counting hashable objects                           .. versionadded:: 4.0
+:class:`OrderedDict`    dict subclass that remembers the order entries were added             .. versionadded:: 4.0
 :class:`defaultdict`    dict subclass that calls a factory function to supply missing values  .. versionadded:: 2.5
 =====================   ====================================================================  ===========================
 
@@ -85,7 +85,7 @@ For example::
         >>> c['sausage'] = 0                        # counter entry with a zero count
         >>> del c['sausage']                        # del actually removes the entry
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
    Counter objects support three methods beyond those available for all
@@ -270,7 +270,7 @@ counts, but the output will exclude results with counts of zero or less.
 
       Count the number of deque elements equal to *x*.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: extend(iterable)
 
@@ -308,7 +308,7 @@ counts, but the output will exclude results with counts of zero or less.
 
       Reverse the elements of the deque in-place and then return ``None``.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: rotate(n)
 
@@ -323,7 +323,7 @@ counts, but the output will exclude results with counts of zero or less.
 
       Maximum size of a deque or *None* if unbounded.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
 In addition to the above, deques support iteration, pickling, ``len(d)``,
@@ -591,7 +591,7 @@ they add the ability to access fields by name instead of position index.
 
    .. versionadded:: 2.6
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       added support for *rename*.
 
 Example:
@@ -692,7 +692,7 @@ field names, the method and attribute names start with an underscore.
       >>> p._asdict()
       OrderedDict([('x', 11), ('y', 22)])
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Returns an :class:`OrderedDict` instead of a regular :class:`dict`.
 
 .. method:: somenamedtuple._replace(kwargs)
@@ -797,7 +797,7 @@ the items are returned in the order their keys were first added.
    original insertion position is left unchanged.  Deleting an entry and
    reinserting it will move it to the end.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. method:: OrderedDict.popitem(last=True)
 

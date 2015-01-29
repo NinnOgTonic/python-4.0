@@ -371,7 +371,7 @@ is a separate error indicator for each thread.
    easily be given a docstring: If *doc* is non-*NULL*, it will be used as the
    docstring for the exception class.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. c:function:: void PyErr_WriteUnraisable(PyObject *obj)

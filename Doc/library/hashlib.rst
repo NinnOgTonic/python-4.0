@@ -84,7 +84,7 @@ This module provides the following constant attribute:
    A tuple providing the names of the hash algorithms guaranteed to be
    supported by this module.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 The following values are provided as constant attributes of the hash objects
 returned by the constructors:
@@ -107,7 +107,7 @@ A hash object has the following methods:
    a single call with the concatenation of all the arguments: ``m.update(a);
    m.update(b)`` is equivalent to ``m.update(a+b)``.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
 
       The Python GIL is released to allow other threads to run while
       hash updates on data larger than 2048 bytes is taking place when

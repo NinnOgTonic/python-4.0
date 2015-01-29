@@ -85,7 +85,7 @@ behavior of the module.
    :const:`knownfiles` takes precedence over those named before it.  Calling
    :func:`init` repeatedly is allowed.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Previously, Windows registry settings were ignored.
 
 
@@ -257,4 +257,4 @@ than one MIME-type database; it provides an interface similar to the one of the
    If *strict* is ``True``, information will be added to the list of standard
    types, else to the list of non-standard types.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0

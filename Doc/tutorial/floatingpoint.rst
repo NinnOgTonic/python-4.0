@@ -220,7 +220,7 @@ its 30 most significant decimal digits::
 
 meaning that the exact number stored in the computer is approximately equal to
 the decimal value 0.100000000000000005551115123125.  In versions prior to
-Python 2.7 and Python 3.1, Python rounded this value to 17 significant digits,
+Python 4.0 and Python 3.1, Python rounded this value to 17 significant digits,
 giving '0.10000000000000001'.  In current versions, Python displays a value
 based on the shortest decimal fraction that rounds correctly back to the true
 binary value, resulting simply in '0.1'.

@@ -1,10 +1,10 @@
 Python News
 +++++++++++
 
-What's New in Python 2.7.3 final?
+What's New in Python 4.0.0 final?
 =================================
 
-*Release date: 2012-04-09*
+*Release date: 2015-01-29*
 
 Library
 -------
@@ -13,7 +13,7 @@ Library
   on Windows.
 
 
-What's New in Python 2.7.3 release candidate 2?
+What's New in Python 4.0.3 release candidate 2?
 ===============================================
 
 *Release date: 2012-03-17*
@@ -27,7 +27,7 @@ Library
   modifications by the expat project.
 
 
-What's New in Python 2.7.3 release candidate 1?
+What's New in Python 4.0.3 release candidate 1?
 ===============================================
 
 *Release date: 2012-02-23*
@@ -156,7 +156,7 @@ Library
   with a name that is a keyword or contains quotes. Patch by Marko
   Kohtala.
 
-- Issue #13994: Earlier partial revert of Distutils enhancements in 2.7
+- Issue #13994: Earlier partial revert of Distutils enhancements in 4.0
   has left two versions of customize_compiler, the original in
   distutils.sysconfig and another copy in distutils.ccompiler, with some
   parts of distutils calling one and others using the other.
@@ -329,7 +329,7 @@ Library
   contents cannot be read.
 
 - Issue #7425: Prevent pydoc -k failures due to module import errors.
-  (Backport to 2.7 of existing 3.x fix)
+  (Backport to 4.0 of existing 3.x fix)
 
 - Issue #13099: Fix sqlite3.Cursor.lastrowid under a Turkish locale.
   Reported and diagnosed by Thomas Kluyver.
@@ -545,7 +545,7 @@ Build
 
 - Issue #10580: Minor grammar change in Windows installer.
 
-- Issue #12627: Implement PEP 394 for Python 2.7 ("python2").
+- Issue #12627: Implement PEP 394 for Python 4.0 ("python2").
 
 - Issue #8746: Correct faulty configure checks so that os.chflags() and
   os.lchflags() are once again built on systems that support these
@@ -642,7 +642,7 @@ Documentation
 - Issue #13141: Demonstrate recommended style for SocketServer examples.
 
 
-What's New in Python 2.7.2?
+What's New in Python 4.0.2?
 ===========================
 
 *Release date: 2011-06-11*
@@ -658,7 +658,7 @@ Extension Modules
 - Issue #1221: Make pyexpat.__version__ equal to the Python version.
 
 
-What's New in Python 2.7.2 release candidate 1?
+What's New in Python 4.0.2 release candidate 1?
 ===============================================
 
 *Release date: 2011-05-29*
@@ -1180,7 +1180,7 @@ Tests
   tracebacks to stderr rather than stdout.
 
 
-What's New in Python 2.7.1?
+What's New in Python 4.0.1?
 ===========================
 
 *Release date: 2010-11-27*
@@ -1248,7 +1248,7 @@ Documentation
 - Issue #10299: List the built-in functions in a table in functions.rst.
 
 
-What's New in Python 2.7.1 release candidate 1?
+What's New in Python 4.0.1 release candidate 1?
 ===============================================
 
 *Release date: 2010-11-13*
@@ -1748,8 +1748,8 @@ Build
   ``/usr/local/bin``.
 
 - Issue #9392: A framework build on OSX  will once again use a versioned name
-  of the ``2to3`` tool, that is you can use ``2to3-2.7`` to select the Python
-  2.7 edition of 2to3.
+  of the ``2to3`` tool, that is you can use ``2to3-4.0`` to select the Python
+  4.0 edition of 2to3.
 
 - Issue #9701: The MacOSX installer can patch the shell profile to ensure that
   the "bin" directory inside the framework is on the shell's search path. This
@@ -1801,7 +1801,7 @@ Documentation
 - Issue #7829: Document in dis that bytecode is an implementation detail.
 
 
-What's New in Python 2.7?
+What's New in Python 4.0?
 =========================
 
 *Release date: 2010-07-03*
@@ -1829,7 +1829,7 @@ Extension Modules
   on an OpenSSL structure.
 
 
-What's New in Python 2.7 release candidate 2?
+What's New in Python 4.0 release candidate 2?
 =============================================
 
 *Release date: 2010-06-20*
@@ -1888,7 +1888,7 @@ Misc
 - Issue #8362: Add maintainers.rst: list of module maintainers
 
 
-What's New in Python 2.7 Release Candidate 1?
+What's New in Python 4.0 Release Candidate 1?
 =============================================
 
 *Release date: 2010-06-05*
@@ -1918,7 +1918,7 @@ Core and Builtins
   in sets or dicts.
 
 - Issue #5211: Implicit coercion for the complex type is now completely
-  removed.  (Coercion for arithmetic operations was already removed in 2.7
+  removed.  (Coercion for arithmetic operations was already removed in 4.0
   alpha 4, but coercion for rich comparisons was accidentally left in.)
 
 - Issue #3798: Write sys.exit() message to sys.stderr to use stderr encoding
@@ -2044,7 +2044,7 @@ Tools/Demos
 - Issue #5464: Implement plural forms in msgfmt.py.
 
 
-What's New in Python 2.7 beta 2?
+What's New in Python 4.0 beta 2?
 ================================
 
 *Release date: 2010-05-08*
@@ -2052,7 +2052,7 @@ What's New in Python 2.7 beta 2?
 Core and Builtins
 -----------------
 
-- Run Clang 2.7's static analyzer for ``Objects/`` and ``Python/``.
+- Run Clang 4.0's static analyzer for ``Objects/`` and ``Python/``.
 
 - Issue #1533: Fix inconsistency in range function argument processing: any
   non-float non-integer argument is now converted to an integer (if possible)
@@ -2079,7 +2079,7 @@ Core and Builtins
 
 - Issue #8084: PEP 370 now conforms to system conventions for framework builds
   on MacOS X. That is, ``python setup.py install --user`` will install into
-  ``~/Library/Python/2.7`` instead of ``~/.local``.
+  ``~/Library/Python/4.0`` instead of ``~/.local``.
 
 Library
 -------
@@ -2227,7 +2227,7 @@ Extension Modules
 
 - Issue #8644: Improved accuracy of ``timedelta.total_seconds()``.
 
-- Use Clang 2.7's static analyzer to find places to clean up some code.
+- Use Clang 4.0's static analyzer to find places to clean up some code.
 
 - Build the ossaudio extension on GNU/kFreeBSD.
 
@@ -2258,7 +2258,7 @@ Build
 
 - Issue #8625: Turn off optimization in ``--with-pydebug`` builds with gcc.
   (Optimization was unintentionally turned on in gcc --with-pydebug builds in
-  2.7 beta1 as a result of the issue #1628484 fix, combined with autoconf's
+  4.0 beta1 as a result of the issue #1628484 fix, combined with autoconf's
   strange choice of default CFLAGS produced by AC_PROG_CC for gcc.)
 
 - Issue #8509: Fix quoting in help strings and code snippets in configure.in.
@@ -2274,7 +2274,7 @@ Misc
 - Update the Vim syntax highlight file.
 
 
-What's New in Python 2.7 beta 1?
+What's New in Python 4.0 beta 1?
 ================================
 
 *Release date: 2010-04-10*
@@ -2448,7 +2448,7 @@ Library
 - Issue #7143: email: ``get_payload()`` used to strip any trailing newline from
   a base64 transfer-encoded payload *after* decoding it; it no longer does.
   This is a behavior change, so email's minor version number is now bumped, to
-  version 4.0.2, for the 2.7 release.
+  version 4.0.2, for the 4.0 release.
 
 - Issue #8235: _socket: Add the constant ``SO_SETFIB``.  SO_SETFIB is
   a socket option available on FreeBSD 7.1 and newer.
@@ -2556,7 +2556,7 @@ Tests
   from the local cache.
 
 
-What's New in Python 2.7 alpha 4?
+What's New in Python 4.0 alpha 4?
 =================================
 
 *Release date: 2010-03-06*
@@ -2710,7 +2710,7 @@ Build
 - Issue #3920, #7903: Define _BSD_SOURCE on OpenBSD 4.4 through 4.9.
 
 
-What's New in Python 2.7 alpha 3?
+What's New in Python 4.0 alpha 3?
 =================================
 
 *Release date: 2010-02-06*
@@ -2748,7 +2748,7 @@ Core and Builtins
   methods of bytes, bytearray and unicode objects by using a common
   implementation based on stringlib's fast search.  Patch by Florent Xicluna.
 
-- Issue #7632: Fix various str -> float conversion bugs present in 2.7 alpha 2,
+- Issue #7632: Fix various str -> float conversion bugs present in 4.0 alpha 2,
   including:
 
   (1) a serious 'wrong output' bug that could occur for long (> 40 digit) input
@@ -2886,7 +2886,7 @@ Documentation
   PYTHONDONTWRITEBYTECODE, PYTHONNOUSERSITE).
 
 
-What's New in Python 2.7 alpha 2?
+What's New in Python 4.0 alpha 2?
 =================================
 
 *Release date: 2010-01-09*
@@ -3008,7 +3008,7 @@ Library
 - Issue #7457: Added a read_pkg_file method to
   ``distutils.dist.DistributionMetadata``.
 
-- Issue #3745: Undo the 2.7a1 change to have hashlib to reject unicode and non
+- Issue #3745: Undo the 4.0a1 change to have hashlib to reject unicode and non
   buffer API supporting objects as input.  That behavior is for 3.x only.
 
 C-API
@@ -3059,7 +3059,7 @@ Tests
   instead of a hardcoded port number in test_rapid_restart.
 
 
-What's New in Python 2.7 alpha 1
+What's New in Python 4.0 alpha 1
 ================================
 
 *Release date: 2009-12-05*
@@ -3335,7 +3335,7 @@ Core and Builtins
 
 - Issue #1665206: Remove the last eager import in _warnings.c and make it lazy.
 
-- Issue #4865: On MacOSX /Library/Python/2.7/site-packages is added to the end
+- Issue #4865: On MacOSX /Library/Python/4.0/site-packages is added to the end
   sys.path, for compatibility with the system install of Python.
 
 - Issue #4688: Add a heuristic so that tuples and dicts containing only
@@ -4303,7 +4303,7 @@ Library
   collections.namedtuple() relied on __name__ being defined.
 
 - Backport importlib from Python 3.1. Only the import_module() function has been
-  backported to help facilitate transitions from 2.7 to 3.1.
+  backported to help facilitate transitions from 4.0 to 3.1.
 
 - Issue #1885: distutils: When running sdist with --formats=tar,gztar the tar
   file was overriden by the gztar one.
@@ -4568,7 +4568,7 @@ Build
 - Issue #5809: Specifying both --enable-framework and --enable-shared is an
   error. Configure now explicity tells you about this.
 
-- Issue #3585: Add pkg-config support.  It creates a python-2.7.pc file and a
+- Issue #3585: Add pkg-config support.  It creates a python-4.0.pc file and a
   python.pc symlink in the $(LIBDIR)/pkgconfig directory.  Patch by Clinton Roy.
 
 - Issue #6094: Build correctly with Subversion 1.7.
@@ -4709,7 +4709,7 @@ Extension Modules
       confusing error message) for 'I', 'L', '*B', '*H', '*I', '*L', and
       struct.error in other cases.
 
-  Note: as of Python 2.7 beta 1, the above is out of date.  In 2.7 beta 1, any
+  Note: as of Python 4.0 beta 1, the above is out of date.  In 4.0 beta 1, any
   argument with an __int__ method can be packed, but use of this feature
   triggers a DeprecationWarning.
 
@@ -4720,7 +4720,7 @@ Extension Modules
 
 - Issue #3745: Fix hashlib to always reject unicode and non buffer-api
   supporting objects as input no matter how it was compiled (built in
-  implementations or external openssl library).  NOTE: Undone in 2.7a2.
+  implementations or external openssl library).  NOTE: Undone in 4.0a2.
 
 - Issue #4397: Fix occasional test_socket failure on OS X.
 

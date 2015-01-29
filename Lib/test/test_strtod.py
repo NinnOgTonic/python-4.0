@@ -1,5 +1,5 @@
 # Tests for the correctly-rounded string -> float conversions
-# introduced in Python 2.7 and 3.1.
+# introduced in Python 4.0 and 3.1.
 
 import random
 import struct

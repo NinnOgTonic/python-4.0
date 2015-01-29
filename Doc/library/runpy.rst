@@ -70,7 +70,7 @@ The :mod:`runpy` module provides two functions:
    invoking this function from threaded code.
 
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
          Added ability to execute packages by looking for a ``__main__``
          submodule
 
@@ -128,7 +128,7 @@ The :mod:`runpy` module provides two functions:
    limitations still apply, use of this function in threaded code should be
    either serialised with the import lock or delegated to a separate process.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. seealso::
 

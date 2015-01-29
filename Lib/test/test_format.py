@@ -81,7 +81,7 @@ class FormatTest(unittest.TestCase):
 
         # check for internal overflow validation on length of precision
         # these tests should no longer cause overflow in Python
-        # 2.7/3.1 and later.
+        # 4.0/3.1 and later.
         testboth("%#.*g", (110, -1.e+100/3.))
         testboth("%#.*G", (110, -1.e+100/3.))
         testboth("%#.*f", (110, -1.e+100/3.))

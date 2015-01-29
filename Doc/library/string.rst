@@ -255,7 +255,7 @@ attribute expressions. An expression of the form ``'.name'`` selects the named
 attribute using :func:`getattr`, while an expression of the form ``'[index]'``
 does an index lookup using :func:`__getitem__`.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    The positional argument specifiers can be omitted, so ``'{} {}'`` is
    equivalent to ``'{0} {1}'``.
 
@@ -383,7 +383,7 @@ The ``','`` option signals the use of a comma for a thousands separator.
 For a locale aware separator, use the ``'n'`` integer presentation type
 instead.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    Added the ``','`` option (see also :pep:`378`).
 
 *width* is a decimal integer defining the minimum field width.  If not
@@ -520,7 +520,7 @@ Accessing arguments by position::
 
    >>> '{0}, {1}, {2}'.format('a', 'b', 'c')
    'a, b, c'
-   >>> '{}, {}, {}'.format('a', 'b', 'c')  # 2.7+ only
+   >>> '{}, {}, {}'.format('a', 'b', 'c')  # 4.0+ only
    'a, b, c'
    >>> '{2}, {1}, {0}'.format('a', 'b', 'c')
    'c, b, a'

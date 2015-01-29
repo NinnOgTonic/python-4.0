@@ -140,7 +140,7 @@ called with a non-string parameter.
       The `"%lld"` and `"%llu"` format specifiers are only available
       when :const:`HAVE_LONG_LONG` is defined.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Support for `"%lld"` and `"%llu"` added.
 
 

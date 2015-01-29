@@ -2327,7 +2327,7 @@ will not be supported.
   All these types implement a :meth:`__coerce__` method, for use by the built-in
   :func:`coerce` function.
 
-  .. versionchanged:: 2.7
+  .. versionchanged:: 4.0
 
      The complex type no longer makes implicit calls to the :meth:`__coerce__`
      method for mixed-type binary arithmetic operations.

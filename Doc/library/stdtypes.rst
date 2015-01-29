@@ -488,7 +488,7 @@ class`. In addition, they provide one more method:
             s = s.lstrip('-0b') # remove leading zeros and minus sign
             return len(s)       # len('100101') --> 6
 
-    .. versionadded:: 2.7
+    .. versionadded:: 4.0
 
 
 Additional Methods on Float
@@ -894,7 +894,7 @@ string functions based on regular expressions.
    .. versionchanged:: 2.3
       Support for other error handling schemes added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Support for keyword arguments added.
 
 .. method:: str.encode([encoding[,errors]])
@@ -914,7 +914,7 @@ string functions based on regular expressions.
       Support for ``'xmlcharrefreplace'`` and ``'backslashreplace'`` and other error
       handling schemes added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Support for keyword arguments added.
 
 .. method:: str.endswith(suffix[, start[, end]])
@@ -1495,7 +1495,7 @@ that ``'\0'`` is the end of the string.
 
 .. XXX Examples?
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    ``%f`` conversions for numbers whose absolute value is over 1e50 are no
    longer replaced by ``%g`` conversions.
 
@@ -1716,7 +1716,7 @@ The :class:`frozenset` type is immutable and :term:`hashable` --- its contents
 cannot be altered after it is created; it can therefore be used as a dictionary
 key or as an element of another set.
 
-As of Python 2.7, non-empty sets (not frozensets) can be created by placing a
+As of Python 4.0, non-empty sets (not frozensets) can be created by placing a
 comma-separated list of elements within braces, for example: ``{'jack',
 'sjoerd'}``, in addition to the :class:`set` constructor.
 
@@ -2156,21 +2156,21 @@ pairs within braces, for example: ``{'jack': 4098, 'sjoerd': 4127}`` or ``{4098:
       Return a new view of the dictionary's items (``(key, value)`` pairs).  See
       below for documentation of view objects.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: viewkeys()
 
       Return a new view of the dictionary's keys.  See below for documentation of
       view objects.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: viewvalues()
 
       Return a new view of the dictionary's values.  See below for documentation of
       view objects.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
 .. _dict-views:
@@ -2584,7 +2584,7 @@ the particular object.
 memoryview type
 ===============
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 :class:`memoryview` objects allow Python code to access the internal data
 of an object that supports the buffer protocol without copying.  Memory

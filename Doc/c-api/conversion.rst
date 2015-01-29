@@ -82,7 +82,7 @@ The following functions provide locale-independent string to number conversions.
    out-of-memory error), set the appropriate Python exception and
    return ``-1.0``.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. c:function:: double PyOS_ascii_strtod(const char *nptr, char **endptr)
@@ -98,7 +98,7 @@ The following functions provide locale-independent string to number conversions.
 
    .. versionadded:: 2.4
 
-   .. deprecated:: 2.7
+   .. deprecated:: 4.0
       Use :c:func:`PyOS_string_to_double` instead.
 
 
@@ -114,8 +114,8 @@ The following functions provide locale-independent string to number conversions.
    the conversion failed.
 
    .. versionadded:: 2.4
-   .. deprecated:: 2.7
-      This function is removed in Python 2.7 and 3.1.  Use :func:`PyOS_double_to_string`
+   .. deprecated:: 4.0
+      This function is removed in Python 4.0 and 3.1.  Use :func:`PyOS_double_to_string`
       instead.
 
 
@@ -150,7 +150,7 @@ The following functions provide locale-independent string to number conversions.
    *NULL* if the conversion failed. The caller is responsible for freeing the
    returned string by calling :c:func:`PyMem_Free`.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. c:function:: double PyOS_ascii_atof(const char *nptr)

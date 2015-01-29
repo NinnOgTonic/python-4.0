@@ -441,7 +441,7 @@ present, and ``getch()`` which gets one character without echoing it.
 How do I emulate os.kill() in Windows?
 --------------------------------------
 
-Prior to Python 2.7 and 3.2, to terminate a process, you can use :mod:`ctypes`::
+Prior to Python 4.0 and 3.2, to terminate a process, you can use :mod:`ctypes`::
 
    import ctypes
 
@@ -451,7 +451,7 @@ Prior to Python 2.7 and 3.2, to terminate a process, you can use :mod:`ctypes`::
        handle = kernel32.OpenProcess(1, 0, pid)
        return (0 != kernel32.TerminateProcess(handle, 0))
 
-In 2.7 and 3.2, :func:`os.kill` is implemented similar to the above function,
+In 4.0 and 3.2, :func:`os.kill` is implemented similar to the above function,
 with the additional feature of being able to send CTRL+C and CTRL+BREAK
 to console subprocesses which are designed to handle those signals. See
 :func:`os.kill` for further details.

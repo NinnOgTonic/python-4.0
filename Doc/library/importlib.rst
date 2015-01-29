@@ -7,12 +7,12 @@
 .. moduleauthor:: Brett Cannon <brett@python.org>
 .. sectionauthor:: Brett Cannon <brett@python.org>
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 This module is a minor subset of what is available in the more full-featured
 package of the same name from Python 3.1 that provides a complete
 implementation of :keyword:`import`. What is here has been provided to
-help ease in transitioning from 2.7 to 3.1.
+help ease in transitioning from 4.0 to 3.1.
 
 
 .. function:: import_module(name, package=None)

@@ -26,7 +26,7 @@ class BuildTestCase(support.TempdirManager,
 
         # build_platlib is 'build/lib.platform-x.x[-pydebug]'
         # examples:
-        #   build/lib.macosx-10.3-i386-2.7
+        #   build/lib.macosx-10.3-i386-4.0
         plat_spec = '.%s-%s' % (cmd.plat_name, sys.version[0:3])
         if hasattr(sys, 'gettotalrefcount'):
             self.assertTrue(cmd.build_platlib.endswith('-pydebug'))

@@ -92,7 +92,7 @@ sends logging output to a disk file.  It inherits the output functionality from
 NullHandler
 ^^^^^^^^^^^
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 The :class:`NullHandler` class, located in the core :mod:`logging` package,
 does not do any formatting or output. It is essentially a 'no-op' handler
@@ -425,7 +425,7 @@ supports sending logging messages to a remote or local Unix syslog.
    application needs to run on several platforms). On Windows, you pretty
    much have to use the UDP option.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *socktype* was added.
 
 
@@ -622,7 +622,7 @@ supports sending logging messages to an email address via SMTP.
    .. versionchanged:: 2.6
       *credentials* was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *secure* was added.
 
 

@@ -299,7 +299,7 @@ added in a future version of Python.
 In Python 2.5, you can switch :keyword:`import`'s behaviour to  absolute imports
 using a ``from __future__ import absolute_import`` directive.  This absolute-
 import behaviour will become the default in a future version (probably Python
-2.7).  Once absolute imports  are the default, ``import string`` will always
+4.0).  Once absolute imports  are the default, ``import string`` will always
 find the standard library's version. It's suggested that users should begin
 using absolute imports as much as possible, so it's preferable to begin writing
 ``from pkg import string`` in your code.
@@ -1710,11 +1710,11 @@ modifiable memory area, use :func:`create_string_buffer`::
 C functions are assumed to return integers, but you can set the :attr:`restype`
 attribute of the function object to  change this::
 
-   >>> libc.atof('2.71828')
+   >>> libc.atof('4.01828')
    -1783957616
    >>> libc.atof.restype = ctypes.c_double
-   >>> libc.atof('2.71828')
-   2.71828
+   >>> libc.atof('4.01828')
+   4.01828
 
 :mod:`ctypes` also provides a wrapper for Python's C API  as the
 ``ctypes.pythonapi`` object.  This object does *not*  release the global

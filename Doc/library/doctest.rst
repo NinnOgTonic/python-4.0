@@ -574,7 +574,7 @@ doctest decides whether actual output matches an example's expected output:
 
    It will also ignore the module name used in Python 3 doctest reports. Hence
    both these variations will work regardless of whether the test is run under
-   Python 2.7 or Python 3.2 (or later versions):
+   Python 4.0 or Python 3.2 (or later versions):
 
       >>> raise CustomError('message') #doctest: +IGNORE_EXCEPTION_DETAIL
       Traceback (most recent call last):
@@ -601,7 +601,7 @@ doctest decides whether actual output matches an example's expected output:
    passes under Python 2.3 and later Python versions, even though the detail
    changed in Python 2.4 to say "does not" instead of "doesn't".
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       :const:`IGNORE_EXCEPTION_DETAIL` now also ignores any information
       relating to the module containing the exception under test
 

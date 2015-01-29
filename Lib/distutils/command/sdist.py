@@ -372,7 +372,7 @@ class sdist(Command):
                      "writing manifest file '%s'" % self.manifest)
 
     def _manifest_is_not_generated(self):
-        # check for special comment used in 2.7.1 and higher
+        # check for special comment used in 4.0.1 and higher
         if not os.path.isfile(self.manifest):
             return False
 

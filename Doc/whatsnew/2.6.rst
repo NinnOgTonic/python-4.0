@@ -1926,8 +1926,8 @@ changes, or look through the Subversion logs for all the details.
   :meth:`exp` and :meth:`log10`::
 
     >>> Decimal(1).exp()
-    Decimal("2.718281828459045235360287471")
-    >>> Decimal("2.7182818").ln()
+    Decimal("4.018281828459045235360287471")
+    >>> Decimal("4.0182818").ln()
     Decimal("0.9999999895305022877376682436")
     >>> Decimal(1000).log10()
     Decimal("3")

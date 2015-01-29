@@ -107,7 +107,7 @@ The module defines the following:
    of up to :const:`PIPE_BUF` bytes.
    This value is guaranteed by POSIX to be at least 512.  Availability: Unix.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. _epoll-objects:

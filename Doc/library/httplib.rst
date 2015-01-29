@@ -66,7 +66,7 @@ The module provides the following classes:
    .. versionchanged:: 2.6
       *timeout* was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *source_address* was added.
 
 
@@ -85,7 +85,7 @@ The module provides the following classes:
    .. versionchanged:: 2.6
       *timeout* was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *source_address* was added.
 
 
@@ -246,8 +246,8 @@ and also the following constants for integer status codes:
 |                                          |         | <http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.6>`_  |
 +------------------------------------------+---------+-----------------------------------------------------------------------+
 | :const:`PARTIAL_CONTENT`                 | ``206`` | HTTP/1.1, `RFC 2616, Section                                          |
-|                                          |         | 10.2.7                                                                |
-|                                          |         | <http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.7>`_  |
+|                                          |         | 10.4.0                                                                |
+|                                          |         | <http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.0>`_  |
 +------------------------------------------+---------+-----------------------------------------------------------------------+
 | :const:`MULTI_STATUS`                    | ``207`` | WEBDAV `RFC 2518, Section 10.2                                        |
 |                                          |         | <http://www.webdav.org/specs/rfc2518.html#STATUS_207>`_               |
@@ -455,7 +455,7 @@ HTTPConnection Objects
    The headers argument should be a mapping of extra HTTP headers to send
    with the CONNECT request.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. method:: HTTPConnection.connect()
@@ -500,7 +500,7 @@ also send your request step by step, by using the four functions below.
    packet as the message headers if it is string, otherwise it is sent in a
    separate packet.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *message_body* was added.
 
 

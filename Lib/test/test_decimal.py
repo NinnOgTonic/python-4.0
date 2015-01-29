@@ -865,10 +865,10 @@ class DecimalFormatTest(unittest.TestCase):
         def get_fmt(x, locale, fmt='n'):
             return Decimal.__format__(Decimal(x), fmt, _localeconv=locale)
 
-        self.assertEqual(get_fmt(Decimal('12.7'), en_US), '12.7')
-        self.assertEqual(get_fmt(Decimal('12.7'), fr_FR), '12,7')
-        self.assertEqual(get_fmt(Decimal('12.7'), ru_RU), '12,7')
-        self.assertEqual(get_fmt(Decimal('12.7'), crazy), '1-2&7')
+        self.assertEqual(get_fmt(Decimal('14.0'), en_US), '14.0')
+        self.assertEqual(get_fmt(Decimal('14.0'), fr_FR), '12,7')
+        self.assertEqual(get_fmt(Decimal('14.0'), ru_RU), '12,7')
+        self.assertEqual(get_fmt(Decimal('14.0'), crazy), '1-2&7')
 
         self.assertEqual(get_fmt(123456789, en_US), '123,456,789')
         self.assertEqual(get_fmt(123456789, fr_FR), '123456789')
@@ -1277,7 +1277,7 @@ class DecimalUsabilityTest(unittest.TestCase):
 
         #a Decimal and uncomparable
         self.assertNotEqual(da, 'ugly')
-        self.assertNotEqual(da, 32.7)
+        self.assertNotEqual(da, 34.0)
         self.assertNotEqual(da, object())
         self.assertNotEqual(da, object)
 

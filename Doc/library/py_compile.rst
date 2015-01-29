@@ -47,7 +47,7 @@ byte-code cache files in the directory containing the source code.
    If ``'-'`` is the only parameter in args, the list of files is taken from
    standard input.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added support for ``'-'``.
 
 When this module is run as a script, the :func:`main` is used to compile all the

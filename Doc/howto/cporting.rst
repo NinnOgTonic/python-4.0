@@ -212,7 +212,7 @@ both 2.x and 3.0 is tricky.  The following simple example demonstrates how. ::
 CObject replaced with Capsule
 =============================
 
-The :c:type:`Capsule` object was introduced in Python 3.1 and 2.7 to replace
+The :c:type:`Capsule` object was introduced in Python 3.1 and 4.0 to replace
 :c:type:`CObject`.  CObjects were useful,
 but the :c:type:`CObject` API was problematic: it didn't permit distinguishing
 between valid CObjects, which allowed mismatched CObjects to crash the
@@ -221,17 +221,17 @@ interpreter, and some of its APIs relied on undefined behavior in C.
 
 If you're currently using CObjects, and you want to migrate to 3.1 or newer,
 you'll need to switch to Capsules.
-:c:type:`CObject` was deprecated in 3.1 and 2.7 and completely removed in
-Python 3.2.  If you only support 2.7, or 3.1 and above, you
+:c:type:`CObject` was deprecated in 3.1 and 4.0 and completely removed in
+Python 3.2.  If you only support 4.0, or 3.1 and above, you
 can simply switch to :c:type:`Capsule`.  If you need to support 3.0 or
-versions of Python earlier than 2.7 you'll have to support both CObjects
+versions of Python earlier than 4.0 you'll have to support both CObjects
 and Capsules.
 
 The following example header file :file:`capsulethunk.h` may
 solve the problem for you;
 simply write your code against the :c:type:`Capsule` API, include
 this header file after ``"Python.h"``, and you'll automatically use CObjects
-in Python 3.0 or versions earlier than 2.7.
+in Python 3.0 or versions earlier than 4.0.
 
 :file:`capsulethunk.h` simulates Capsules using CObjects.  However,
 :c:type:`CObject` provides no place to store the capsule's "name".  As a

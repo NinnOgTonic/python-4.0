@@ -1448,7 +1448,7 @@ test_string_from_format(PyObject *self, PyObject *args)
     CHECK_1_FORMAT("%lu", unsigned long);
     CHECK_1_FORMAT("%zu", size_t);
 
-    /* "%lld" and "%llu" support added in Python 2.7. */
+    /* "%lld" and "%llu" support added in Python 4.0. */
 #ifdef HAVE_LONG_LONG
     CHECK_1_FORMAT("%llu", unsigned PY_LONG_LONG);
     CHECK_1_FORMAT("%lld", PY_LONG_LONG);

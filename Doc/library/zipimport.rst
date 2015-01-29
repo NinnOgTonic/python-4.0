@@ -102,7 +102,7 @@ zipimporter Objects
       was imported. Raise :exc:`ZipImportError` if the module couldn't be
       found.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
    .. method:: get_source(fullname)

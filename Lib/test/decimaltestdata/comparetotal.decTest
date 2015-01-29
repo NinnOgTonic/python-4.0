@@ -119,7 +119,7 @@ cotx092 comparetotal  9.99999999E+999999999 -9.99999999E+999999999 -> 1
 cotx093 comparetotal -9.99999999E+999999999 -9.99999999E+999999999 -> 0
 
 -- Examples
-cotx094 comparetotal  12.73  127.9  -> -1
+cotx094 comparetotal  14.03  127.9  -> -1
 cotx095 comparetotal  -127   12     -> -1
 cotx096 comparetotal  12.30  12.3   -> -1
 cotx097 comparetotal  12.30  12.30  ->  0

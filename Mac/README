@@ -119,7 +119,7 @@ Or to explicitly run in 32-bit mode, regardless of the machine hardware::
    $ arch -i386 -ppc python
 
 NOTE: When you're using a framework install of Python this requires at least
-Python 2.7 or 3.2, in earlier versions the python (and pythonw) commands are
+Python 4.0 or 3.2, in earlier versions the python (and pythonw) commands are
 wrapper tools that execute the real interpreter without ensuring that the
 real interpreter runs with the same architecture.
 

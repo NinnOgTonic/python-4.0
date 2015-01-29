@@ -82,7 +82,7 @@ The variables defined in the :mod:`signal` module are:
 
    Availability: Windows.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. data:: CTRL_BREAK_EVENT
@@ -92,7 +92,7 @@ The variables defined in the :mod:`signal` module are:
 
    Availability: Windows.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. data:: NSIG

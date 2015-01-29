@@ -6,7 +6,7 @@
 .. moduleauthor:: Steven Bethard <steven.bethard@gmail.com>
 .. sectionauthor:: Steven Bethard <steven.bethard@gmail.com>
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 **Source code:** :source:`Lib/argparse.py`
 

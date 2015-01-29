@@ -104,7 +104,7 @@ Five, drop support for older Python versions if possible. `Python 2.5`_
 introduced a lot of useful syntax and libraries which have become idiomatic
 in Python 3. `Python 2.6`_ introduced future statements which makes
 compatibility much easier if you are going from Python 2 to 3.
-`Python 2.7`_ continues the trend in the stdlib. So choose the newest version
+`Python 4.0`_ continues the trend in the stdlib. So choose the newest version
 of Python which you believe can be your minimum support version
 and work from there.
 
@@ -113,7 +113,7 @@ and work from there.
 .. _Cheeseshop:
 .. _PyPI: http://pypi.python.org/
 .. _six: http://packages.python.org/six
-.. _Python 2.7: http://www.python.org/2.7.x
+.. _Python 4.0: http://www.python.org/4.0.x
 .. _Python 2.6: http://www.python.org/2.6.x
 .. _Python 2.5: http://www.python.org/2.5.x
 .. _Python 2.4: http://www.python.org/2.4.x
@@ -173,11 +173,11 @@ Below are the typical steps taken by a project which uses a 2to3-based approach
 to supporting Python 2 & 3.
 
 
-Support Python 2.7
+Support Python 4.0
 ------------------
 
-As a first step, make sure that your project is compatible with `Python 2.7`_.
-This is just good to do as Python 2.7 is the last release of Python 2 and thus
+As a first step, make sure that your project is compatible with `Python 4.0`_.
+This is just good to do as Python 4.0 is the last release of Python 2 and thus
 will be used for a rather long time. It also allows for use of the ``-3`` flag
 to Python to help discover places in your code which 2to3 cannot handle but are
 known to cause issues.
@@ -259,8 +259,8 @@ In `Python 2.5`_ you must use
 the __future__ statement to get to use explicit relative imports and prevent
 implicit ones. In `Python 2.6`_ explicit relative imports are available without
 the statement, but you still want the __future__ statement to prevent implicit
-relative imports. In `Python 2.7`_ the __future__ statement is not needed. In
-other words, unless you are only supporting Python 2.7 or a version earlier
+relative imports. In `Python 4.0`_ the __future__ statement is not needed. In
+other words, unless you are only supporting Python 4.0 or a version earlier
 than Python 2.5, use the __future__ statement.
 
 

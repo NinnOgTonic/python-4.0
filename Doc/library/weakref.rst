@@ -68,7 +68,7 @@ regular expression pattern objects, and code objects.
 .. versionchanged:: 2.4
    Added support for files, sockets, arrays, and patterns.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    Added support for thread.lock, threading.Lock, and code objects.
 
 Several built-in types such as :class:`list` and :class:`dict` do not directly
@@ -218,7 +218,7 @@ methods of :class:`WeakKeyDictionary` objects.
    Set class that keeps weak references to its elements.  An element will be
    discarded when no strong reference to it exists any more.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. data:: ReferenceType

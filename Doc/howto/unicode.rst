@@ -275,7 +275,7 @@ Unicode result).  The following examples show the differences::
     >>> unicode('\x80abc', errors='ignore')
     u'abc'
 
-Encodings are specified as strings containing the encoding's name.  Python 2.7
+Encodings are specified as strings containing the encoding's name.  Python 4.0
 comes with roughly 100 different encodings; see the Python Library Reference at
 :ref:`standard-encodings` for a list.  Some encodings
 have multiple names; for example, 'latin-1', 'iso_8859_1' and '8859' are all

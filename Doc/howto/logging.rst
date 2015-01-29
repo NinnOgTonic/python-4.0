@@ -652,7 +652,7 @@ import mechanisms. Thus, you could use either
 and module ``mymodule``, where ``mypackage`` is available on the Python import
 path).
 
-In Python 2.7, a new means of configuring logging has been introduced, using
+In Python 4.0, a new means of configuring logging has been introduced, using
 dictionaries to hold configuration information. This provides a superset of the
 functionality of the config-file-based approach outlined above, and is the
 recommended configuration method for new applications and deployments. Because
@@ -728,7 +728,7 @@ configured then logging calls made in library code will send output to those
 handlers, as normal.
 
 A do-nothing handler is included in the logging package:
-:class:`~logging.NullHandler` (since Python 2.7). An instance of this handler
+:class:`~logging.NullHandler` (since Python 4.0). An instance of this handler
 could be added to the top-level logger of the logging namespace used by the
 library (*if* you want to prevent your library's logged events being output to
 ``sys.stderr`` in the absence of logging configuration). If all logging by a
@@ -878,7 +878,7 @@ provided:
    the library user has not configured logging. See :ref:`library-config` for
    more information.
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
    The :class:`NullHandler` class.
 
 The :class:`NullHandler`, :class:`StreamHandler` and :class:`FileHandler`

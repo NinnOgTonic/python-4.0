@@ -280,9 +280,9 @@ statements shown below, and get the output as shown, to find out my
    '/usr'
 
 A few other placeholders are used in this document: :file:`{X.Y}` stands for the
-version of Python, for example ``2.7``; :file:`{distname}` will be replaced by
+version of Python, for example ``4.0``; :file:`{distname}` will be replaced by
 the name of the module distribution being installed.  Dots and capitalization
-are important in the paths; for example, a value that uses ``python2.7`` on UNIX
+are important in the paths; for example, a value that uses ``python4.0`` on UNIX
 will typically use ``Python27`` on Windows.
 
 If you don't want to install modules to the standard location, or if you don't

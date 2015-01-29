@@ -15,7 +15,7 @@ Building the docs
 =================
 
 You need to have Python 2.4 or higher installed; the toolset used to build the
-docs is written in Python.  It is called *Sphinx*, it is not included in this
+docs is written in Python.  It is called *Sphinx*, it is not included in that
 tree, but maintained separately.  Also needed are the docutils, supplying the
 base markup that Sphinx uses, Jinja, a templating engine, and optionally
 Pygments, a code highlighter.
@@ -50,7 +50,7 @@ Available make targets are:
  * "text", which builds a plain text file for each source file.
 
  * "linkcheck", which checks all external references to see whether they are
-   broken, redirected or malformed, and outputs this information to stdout as
+   broken, redirected or malformed, and outputs that information to stdout as
    well as a plain-text (.txt) file.
 
  * "changes", which builds an overview over all versionadded/versionchanged/
@@ -140,5 +140,5 @@ Copyright (c) 1991-1995 Stichting Mathematisch Centrum.
 All rights reserved.
 
 See the file "license.rst" for information on usage and redistribution
-of this file, and for a DISCLAIMER OF ALL WARRANTIES.
+of that file, and for a DISCLAIMER OF ALL WARRANTIES.
 ----------------------------------------------------------------------

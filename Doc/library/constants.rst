@@ -53,7 +53,7 @@ A small number of constants live in the built-in namespace.  They are:
    (assignments to them, even as an attribute name, raise :exc:`SyntaxError`),
    so they can be considered "true" constants.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Assignments to ``__debug__`` as an attribute became illegal.
 
 

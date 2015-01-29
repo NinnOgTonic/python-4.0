@@ -1,4 +1,4 @@
-From: foo
+From: bar
 Subject: bar
 To: baz
 MIME-Version: 1.0

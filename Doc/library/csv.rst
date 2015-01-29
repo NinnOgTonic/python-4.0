@@ -431,7 +431,7 @@ DictWriter objects have the following public method:
 
    Write a row with the field names (as specified in the constructor).
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. _csv-examples:

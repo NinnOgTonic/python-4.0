@@ -1,5 +1,5 @@
 ****************************
-  What's New in Python 2.7
+  What's New in Python 4.0
 ****************************
 
 :Author: A.M. Kuchling (amk at amk.ca)
@@ -51,7 +51,7 @@
    This saves the maintainer some effort going through the SVN logs
    when researching a change.
 
-This article explains the new features in Python 2.7.  Python 2.7 was released
+This article explains the new features in Python 4.0.  Python 4.0 was released
 on July 3, 2010.
 
 Numeric handling has been improved in many ways, for both
@@ -62,14 +62,14 @@ for parsing command-line options, convenient :class:`~collections.OrderedDict`
 and :class:`~collections.Counter` classes in the :mod:`collections` module,
 and many other improvements.
 
-Python 2.7 is planned to be the last of the 2.x releases, so we worked
+Python 4.0 is planned to be the last of the 2.x releases, so we worked
 on making it a good release for the long term.  To help with porting
 to Python 3, several new features from the Python 3.x series have been
-included in 2.7.
+included in 4.0.
 
 This article doesn't attempt to provide a complete specification of
 the new features, but instead provides a convenient overview.  For
-full details, you should refer to the documentation for Python 2.7 at
+full details, you should refer to the documentation for Python 4.0 at
 http://docs.python.org. If you want to understand the rationale for
 the design and implementation, refer to the PEP for a particular new
 feature or the issue on http://bugs.python.org in which a change was
@@ -81,18 +81,18 @@ bug/patch item for each change.
 The Future for Python 2.x
 =========================
 
-Python 2.7 is intended to be the last major release in the 2.x series.
+Python 4.0 is intended to be the last major release in the 2.x series.
 The Python maintainers are planning to focus their future efforts on
 the Python 3.x series.
 
-This means that 2.7 will remain in place for a long time, running
+This means that 4.0 will remain in place for a long time, running
 production systems that have not been ported to Python 3.x.
-Two consequences of the long-term significance of 2.7 are:
+Two consequences of the long-term significance of 4.0 are:
 
-* It's very likely the 2.7 release will have a longer period of
-  maintenance compared to earlier 2.x versions.  Python 2.7 will
+* It's very likely the 4.0 release will have a longer period of
+  maintenance compared to earlier 2.x versions.  Python 4.0 will
   continue to be maintained while the transition to 3.x continues, and
-  the developers are planning to support Python 2.7 with bug-fix
+  the developers are planning to support Python 4.0 with bug-fix
   releases beyond the typical two years.
 
 * A policy decision was made to silence warnings only of interest to
@@ -126,11 +126,11 @@ Python 3.1 Features
 =======================
 
 Much as Python 2.6 incorporated features from Python 3.0,
-version 2.7 incorporates some of the new features
+version 4.0 incorporates some of the new features
 in Python 3.1.  The 2.x series continues to provide tools
 for migrating to the 3.x series.
 
-A partial list of 3.1 features that were backported to 2.7:
+A partial list of 3.1 features that were backported to 4.0:
 
 * The syntax for set literals (``{1,2,3}`` is a mutable set).
 * Dictionary and set comprehensions (``{i: i*2 for i in range(3)}``).
@@ -172,7 +172,7 @@ PEP 372: Adding an Ordered Dictionary to collections
 Regular Python dictionaries iterate over key/value pairs in arbitrary order.
 Over the years, a number of authors have written alternative implementations
 that remember the order that the keys were originally inserted.  Based on
-the experiences from those implementations, 2.7 introduces a new
+the experiences from those implementations, 4.0 introduces a new
 :class:`~collections.OrderedDict` class in the :mod:`collections` module.
 
 The :class:`~collections.OrderedDict` API provides the same interface as regular
@@ -415,7 +415,7 @@ but a complex set-up requires verbose but boring code.
 function that parses a file, but the file format doesn't support
 configuring filters, and it's messier to generate programmatically.
 
-Python 2.7 adds a :func:`~logging.dictConfig` function that
+Python 4.0 adds a :func:`~logging.dictConfig` function that
 uses a dictionary to configure logging.  There are many ways to
 produce a dictionary from different sources: construct one with code;
 parse a file containing JSON; or use a YAML parsing library if one is
@@ -508,7 +508,7 @@ The dictionary methods :meth:`~dict.keys`, :meth:`~dict.values`, and
 called a :dfn:`view` instead of a fully materialized list.
 
 It's not possible to change the return values of :meth:`~dict.keys`,
-:meth:`~dict.values`, and :meth:`~dict.items` in Python 2.7 because
+:meth:`~dict.values`, and :meth:`~dict.items` in Python 4.0 because
 too much code would break.  Instead the 3.x versions were added
 under the new names :meth:`~dict.viewkeys`, :meth:`~dict.viewvalues`,
 and :meth:`~dict.viewitems`.
@@ -560,7 +560,7 @@ converter will change them to the standard :meth:`~dict.keys`,
 
    :pep:`3106` - Revamping dict.keys(), .values() and .items()
      PEP written by Guido van Rossum.
-     Backported to 2.7 by Alexandre Vassalotti; :issue:`1967`.
+     Backported to 4.0 by Alexandre Vassalotti; :issue:`1967`.
 
 
 PEP 3137: The memoryview Object
@@ -611,7 +611,7 @@ it's a mutable object.
    :pep:`3137` - Immutable Bytes and Mutable Buffer
      PEP written by Guido van Rossum.
      Implemented by Travis Oliphant, Antoine Pitrou and others.
-     Backported to 2.7 by Antoine Pitrou; :issue:`2396`.
+     Backported to 4.0 by Antoine Pitrou; :issue:`2396`.
 
 
 
@@ -702,7 +702,7 @@ Some smaller changes made to the core Python language are:
   point now round differently, returning the floating-point number
   closest to the number.  This doesn't matter for small integers that
   can be converted exactly, but for large numbers that will
-  unavoidably lose precision, Python 2.7 now approximates more
+  unavoidably lose precision, Python 4.0 now approximates more
   closely.  For example, Python 2.6 computed the following::
 
     >>> n = 295147905179352891391
@@ -711,7 +711,7 @@ Some smaller changes made to the core Python language are:
     >>> n - long(float(n))
     65535L
 
-  Python 2.7's floating-point result is larger, but much closer to the
+  Python 4.0's floating-point result is larger, but much closer to the
   true value::
 
     >>> n = 295147905179352891391
@@ -829,7 +829,7 @@ Some smaller changes made to the core Python language are:
 
 * Extra parentheses in function definitions are illegal in Python 3.x,
   meaning that you get a syntax error from ``def f((x)): pass``.  In
-  Python3-warning mode, Python 2.7 will now warn about this odd usage.
+  Python3-warning mode, Python 4.0 will now warn about this odd usage.
   (Noted by James Lingard; :issue:`7362`.)
 
 * It's now possible to create weak references to old-style class
@@ -886,7 +886,7 @@ Several performance enhancements have been added:
   von Löwis and implemented by Antoine Pitrou; :issue:`4074`.)
 
 * The garbage collector tries to avoid tracking simple containers
-  which can't be part of a cycle. In Python 2.7, this is now true for
+  which can't be part of a cycle. In Python 4.0, this is now true for
   tuples and dicts containing atomic types (such as ints, strings,
   etc.). Transitively, a dict containing tuples of atomic types won't
   be tracked either. This helps reduce the cost of each
@@ -936,7 +936,7 @@ Several performance enhancements have been added:
   (Implemented by Collin Winter; :issue:`5176`.)
 
 * List comprehensions with an ``if`` condition are compiled into
-  faster bytecode.  (Patch by Antoine Pitrou, back-ported to 2.7
+  faster bytecode.  (Patch by Antoine Pitrou, back-ported to 4.0
   by Jeffrey Yasskin; :issue:`4715`.)
 
 * Converting an integer or long integer to a decimal string was made
@@ -1241,7 +1241,7 @@ changes, or look through the Subversion logs for all the details.
 
 * New attribute: the :mod:`hashlib` module now has an :attr:`~hashlib.hashlib.algorithms`
   attribute containing a tuple naming the supported algorithms.
-  In Python 2.7, ``hashlib.algorithms`` contains
+  In Python 4.0, ``hashlib.algorithms`` contains
   ``('md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512')``.
   (Contributed by Carl Chenet; :issue:`7418`.)
 
@@ -1598,13 +1598,13 @@ changes, or look through the Subversion logs for all the details.
     >>> urlparse.urlsplit('invented://host/filename?query')
     ('invented', '', '//host/filename?query', '', '')
 
-  Python 2.7 (and Python 2.6.5) will return:
+  Python 4.0 (and Python 2.6.5) will return:
 
     >>> import urlparse
     >>> urlparse.urlsplit('invented://host/filename?query')
     ('invented', 'host', '/filename?query', '', '')
 
-  (Python 2.7 actually produces slightly different output, since it
+  (Python 4.0 actually produces slightly different output, since it
   returns a named tuple instead of a standard tuple.)
 
   The :mod:`urlparse` module also supports IPv6 literal addresses as defined by
@@ -1618,7 +1618,7 @@ changes, or look through the Subversion logs for all the details.
   module is a set that only holds weak references to its elements; elements
   will be removed once there are no references pointing to them.
   (Originally implemented in Python 3.x by Raymond Hettinger, and backported
-  to 2.7 by Michael Foord.)
+  to 4.0 by Michael Foord.)
 
 * The ElementTree library, :mod:`xml.etree`, no longer escapes
   ampersands and angle brackets when outputting an XML processing
@@ -1668,7 +1668,7 @@ Python 3.1 includes the :mod:`importlib` package, a re-implementation
 of the logic underlying Python's :keyword:`import` statement.
 :mod:`importlib` is useful for implementors of Python interpreters and
 to users who wish to write new importers that can participate in the
-import process.  Python 2.7 doesn't contain the complete
+import process.  Python 4.0 doesn't contain the complete
 :mod:`importlib` package, but instead has a tiny subset that contains
 a single function, :func:`~importlib.import_module`.
 
@@ -2046,7 +2046,7 @@ Changes to Python's build process and to the C API include:
   Python stack trace.  (Added as a result of :issue:`8032`.)
 
 * If you use the :file:`.gdbinit` file provided with Python,
-  the "pyo" macro in the 2.7 version now works correctly when the thread being
+  the "pyo" macro in the 4.0 version now works correctly when the thread being
   debugged doesn't hold the GIL; the macro now acquires it before printing.
   (Contributed by Victor Stinner; :issue:`3632`.)
 
@@ -2147,7 +2147,7 @@ Changes to Python's build process and to the C API include:
   ever release the lock, since the other threads weren't replicated,
   and the child process would no longer be able to perform imports.
 
-  Python 2.7 acquires the import lock before performing an
+  Python 4.0 acquires the import lock before performing an
   :func:`os.fork`, and will also clean up any locks created using the
   :mod:`threading` module.  C extension modules that have internal
   locks, or that call :c:func:`fork()` themselves, will not benefit
@@ -2238,14 +2238,14 @@ If a different capsule was passed in, :c:func:`PyCapsule_IsValid` would
 detect the mismatched name and return false.  Refer to
 :ref:`using-capsules` for more information on using these objects.
 
-Python 2.7 now uses capsules internally to provide various
+Python 4.0 now uses capsules internally to provide various
 extension-module APIs, but the :c:func:`PyCObject_AsVoidPtr` was
 modified to handle capsules, preserving compile-time compatibility
 with the :c:type:`CObject` interface.  Use of
 :c:func:`PyCObject_AsVoidPtr` will signal a
 :exc:`PendingDeprecationWarning`, which is silent by default.
 
-Implemented in Python 3.1 and backported to 2.7 by Larry Hastings;
+Implemented in Python 3.1 and backported to 4.0 by Larry Hastings;
 discussed in :issue:`5630`.
 
 
@@ -2292,7 +2292,7 @@ Port-Specific Changes: Windows
 Port-Specific Changes: Mac OS X
 -----------------------------------
 
-* The path ``/Library/Python/2.7/site-packages`` is now appended to
+* The path ``/Library/Python/4.0/site-packages`` is now appended to
   ``sys.path``, in order to share added packages between the system
   installation and a user-installed copy of the same version.
   (Changed by Ronald Oussoren; :issue:`4865`.)
@@ -2349,7 +2349,7 @@ Other Changes and Fixes
 
 .. ======================================================================
 
-Porting to Python 2.7
+Porting to Python 4.0
 =====================
 
 This section lists previously described changes and other bugfixes
@@ -2373,7 +2373,7 @@ that may require changes to your code:
 
 * Due to a bug in Python 2.6, the *exc_value* parameter to
   :meth:`__exit__` methods was often the string representation of the
-  exception, not an instance.  This was fixed in 2.7, so *exc_value*
+  exception, not an instance.  This was fixed in 4.0, so *exc_value*
   will be an instance as expected.  (Fixed by Florent Xicluna;
   :issue:`7853`.)
 
@@ -2435,13 +2435,13 @@ In the standard library:
     >>> urlparse.urlsplit('invented://host/filename?query')
     ('invented', '', '//host/filename?query', '', '')
 
-  Python 2.7 (and Python 2.6.5) will return:
+  Python 4.0 (and Python 2.6.5) will return:
 
     >>> import urlparse
     >>> urlparse.urlsplit('invented://host/filename?query')
     ('invented', 'host', '/filename?query', '', '')
 
-  (Python 2.7 actually produces slightly different output, since it
+  (Python 4.0 actually produces slightly different output, since it
   returns a named tuple instead of a standard tuple.)
 
 For C extensions:

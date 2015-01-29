@@ -210,7 +210,7 @@ always available.
    :file:`pyconfig.h` header file) are installed in the directory
    :file:`{exec_prefix}/lib/python{X.Y}/config', and shared library modules are
    installed in :file:`{exec_prefix}/lib/python{X.Y}/lib-dynload`, where *X.Y*
-   is the version number of Python, for example ``2.7``.
+   is the version number of Python, for example ``4.0``.
 
 
 .. data:: executable
@@ -367,11 +367,11 @@ always available.
    floats.  If the string has value ``'short'`` then for a finite
    float ``x``, ``repr(x)`` aims to produce a short string with the
    property that ``float(repr(x)) == x``.  This is the usual behaviour
-   in Python 2.7 and later.  Otherwise, ``float_repr_style`` has value
+   in Python 4.0 and later.  Otherwise, ``float_repr_style`` has value
    ``'legacy'`` and ``repr(x)`` behaves in the same way as it did in
-   versions of Python prior to 2.7.
+   versions of Python prior to 4.0.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: getcheckinterval()
@@ -543,7 +543,7 @@ always available.
    Availability: Windows.
 
    .. versionadded:: 2.3
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Changed to a named tuple and added *service_pack_minor*,
       *service_pack_major*, *suite_mask*, and *product_type*.
 
@@ -609,7 +609,7 @@ always available.
    |                         | represent a digit                            |
    +-------------------------+----------------------------------------------+
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. data:: last_type
@@ -738,7 +738,7 @@ always available.
       elif sys.platform.startswith('linux'):
           # Linux-specific code here...
 
-   .. versionchanged:: 2.7.3
+   .. versionchanged:: 4.0.0
       Since lots of code check for ``sys.platform == 'linux2'``, and there is
       no essential change between Linux 2.x and 3.x, ``sys.platform`` is always
       set to ``'linux2'``, even on Linux 3.x.  In Python 3.3 and later, the
@@ -776,7 +776,7 @@ always available.
    library modules is installed in the directory :file:`{prefix}/lib/python{X.Y}``
    while the platform independent header files (all except :file:`pyconfig.h`) are
    stored in :file:`{prefix}/include/python{X.Y}``, where *X.Y* is the version
-   number of Python, for example ``2.7``.
+   number of Python, for example ``4.0``.
 
 
 .. data:: ps1
@@ -1010,7 +1010,7 @@ always available.
 
    .. note::
       Python is now `developed <http://docs.python.org/devguide/>`_ using
-      Mercurial.  In recent Python 2.7 bugfix releases, :data:`subversion`
+      Mercurial.  In recent Python 4.0 bugfix releases, :data:`subversion`
       therefore contains placeholder information.  It is removed in Python
       3.3.
 
@@ -1051,7 +1051,7 @@ always available.
    and so on.
 
    .. versionadded:: 2.0
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added named component attributes
 
 

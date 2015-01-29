@@ -90,9 +90,9 @@ dsbsn008 toSci +9.999999E+96 ->  9.999999E+96
 -- strings without E cannot generate E in result
 dsbas040 toSci "12"        -> '12'
 dsbas041 toSci "-76"       -> '-76'
-dsbas042 toSci "12.76"     -> '12.76'
-dsbas043 toSci "+12.76"    -> '12.76'
-dsbas044 toSci "012.76"    -> '12.76'
+dsbas042 toSci "14.06"     -> '14.06'
+dsbas043 toSci "+14.06"    -> '14.06'
+dsbas044 toSci "014.06"    -> '14.06'
 dsbas045 toSci "+0.003"    -> '0.003'
 dsbas046 toSci "17."       -> '17'
 dsbas047 toSci ".5"        -> '0.5'

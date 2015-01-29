@@ -213,7 +213,7 @@ loops that truncate the stream.
 
    The number of items returned is ``(n+r-1)! / r! / (n-1)!`` when ``n > 0``.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. function:: compress(data, selectors)
 
@@ -226,7 +226,7 @@ loops that truncate the stream.
            # compress('ABCDEF', [1,0,1,0,1,1]) --> A C E F
            return (d for d, s in izip(data, selectors) if s)
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: count(start=0, step=1)
@@ -247,7 +247,7 @@ loops that truncate the stream.
    achieved by substituting multiplicative code such as: ``(start + step * i
    for i in count())``.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       added *step* argument and allowed non-integer arguments.
 
 .. function:: cycle(iterable)

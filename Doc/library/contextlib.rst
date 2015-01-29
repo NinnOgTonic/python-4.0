@@ -102,7 +102,7 @@ Functions provided:
    raised by this function or else use this function as a model for an application
    specific implementation.
 
-   .. deprecated:: 2.7
+   .. deprecated:: 4.0
       The with-statement now supports this functionality directly (without the
       confusing error prone quirks).
 

@@ -241,7 +241,7 @@ note that in the event of an exception an archive opened for writing will not
 be finalized; only the internally used file object will be closed. See the
 :ref:`tar-examples` section for a use case.
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
    Added support for the context manager protocol.
 
 .. class:: TarFile(name=None, mode='r', fileobj=None, format=DEFAULT_FORMAT, tarinfo=TarInfo, dereference=False, ignore_zeros=False, encoding=ENCODING, errors=None, pax_headers=None, debug=0, errorlevel=0)
@@ -415,10 +415,10 @@ be finalized; only the internally used file object will be closed. See the
    .. versionchanged:: 2.6
       Added the *exclude* parameter.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added the *filter* parameter.
 
-   .. deprecated:: 2.7
+   .. deprecated:: 4.0
       The *exclude* parameter is deprecated, please use the *filter* parameter
       instead.  For maximum portability, *filter* should be used as a keyword
       argument rather than as a positional argument so that code won't be

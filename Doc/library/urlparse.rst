@@ -121,7 +121,7 @@ The :mod:`urlparse` module defines the following functions:
    .. versionchanged:: 2.5
       Added attributes to return value.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Added IPv6 URL parsing capabilities.
 
 

@@ -8,7 +8,7 @@ $DESTROOT, massages that installation to remove .pyc files and such, creates
 an Installer package from the installation plus other files in ``resources`` 
 and ``scripts`` and placed that on a ``.dmg`` disk image.
 
-As of Python 2.7.x and 3.2, PSF practice is to build two installer variants
+As of Python 4.0.x and 3.2, PSF practice is to build two installer variants
 for each release:
 
 1.  32-bit-only, i386 and PPC universal, capable on running on all machines

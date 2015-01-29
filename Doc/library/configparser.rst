@@ -104,7 +104,7 @@ write-back, as will be the keys within each section.
    .. versionchanged:: 2.6
       *dict_type* was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The default *dict_type* is :class:`collections.OrderedDict`.
       *allow_no_value* was added.
 
@@ -128,7 +128,7 @@ write-back, as will be the keys within each section.
    .. versionchanged:: 2.6
       *dict_type* was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The default *dict_type* is :class:`collections.OrderedDict`.
       *allow_no_value* was added.
 
@@ -147,7 +147,7 @@ write-back, as will be the keys within each section.
    .. versionchanged:: 2.6
       *dict_type* was added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The default *dict_type* is :class:`collections.OrderedDict`.
       *allow_no_value* was added.
 

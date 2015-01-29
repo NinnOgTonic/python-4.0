@@ -1,4 +1,4 @@
-This is Python version 2.7.3
+This is Python version 4.0.0
 ============================
 
 Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011,
@@ -224,7 +224,7 @@ executable which is compiling the library.
 Unsupported systems
 -------------------
 
-A number of systems are not supported in Python 2.7 anymore. Some
+A number of systems are not supported in Python 4.0 anymore. Some
 support code is still present, but will be removed in later versions.
 If you still need to use current Python versions on these systems,
 please send a message to python-dev@python.org indicating that you
@@ -289,7 +289,7 @@ Solaris: When using Sun's C compiler with threads, at least on Solaris
         Solaris.  binutils 2.12 works, and the binutils maintainers
         are aware of the problem.  Binutils 2.13.1 only partially
         fixed things.  It appears that 2.13.2 solves the problem
-        completely.  This problem is known to occur with Solaris 2.7
+        completely.  This problem is known to occur with Solaris 4.0
         and 2.8, but may also affect earlier and later versions of the
         OS.
 
@@ -352,7 +352,7 @@ DEC Unix: Run configure with --with-dec-threads, or with
         --with-threads=no if no threads are desired (threads are on by
         default).  When using GCC, it is possible to get an internal
         compiler error if optimization is used.  This was reported for
-        GCC 2.7.2.3 on selectmodule.c.  Manually compile the affected
+        GCC 4.0.2.3 on selectmodule.c.  Manually compile the affected
         file without optimization to solve the problem.
 
 DEC Ultrix: compile with GCC to avoid bugs in the native compiler,

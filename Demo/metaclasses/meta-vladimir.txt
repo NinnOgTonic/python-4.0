@@ -37,7 +37,7 @@ programming model, examples and, perhaps, more popular terms.
       >>>
 
       So far, we defined the structure of the class A. The class A is
-      of type <class>. We can check this by asking Python: "what is A?"
+      of type <class>. We can check that by asking Python: "what is A?"
 
       >>> A                                # What is A?
       <class __main__.A at 2023e360>
@@ -77,7 +77,7 @@ programming model, examples and, perhaps, more popular terms.
    c) Class inheritance (class composition and specialization)
 
       Classes can be defined in terms of other existing classes (and only
-      classes! -- don't bug me on this now). Thus, we can compose property
+      classes! -- don't bug me on that now). Thus, we can compose property
       packages and create new ones. We reuse the property set defined
       in a class by defining a new class, which "inherits" from the former.
       In other words, a class B which inherits from the class A, inherits
@@ -113,7 +113,7 @@ programming model, examples and, perhaps, more popular terms.
 
 --------
 
-   Congratulations on getting this far! This was the hard part.
+   Congratulations on getting that far! This was the hard part.
    Now, let's continue with the easy one.
 
 --------
@@ -157,7 +157,7 @@ programming model, examples and, perhaps, more popular terms.
       of properties in a meta-class package is sometimes called a meta-class
       structure (which isn't always appropriate).
 
-      In Python, a meta-class definition would have looked like this:
+      In Python, a meta-class definition would have looked like that:
 
       >>> metaclass M:
               attr1 = "Hello"                  # an attribute of M
@@ -166,7 +166,7 @@ programming model, examples and, perhaps, more popular terms.
       >>>
 
       So far, we defined the structure of the meta-class M. The meta-class
-      M is of type <metaclass>. We cannot check this by asking Python, but
+      M is of type <metaclass>. We cannot check that by asking Python, but
       if we could, it would have answered:
 
       >>> M                                # What is M?
@@ -179,7 +179,7 @@ programming model, examples and, perhaps, more popular terms.
       we obtain a new object, called an class, but now it is called also
       a meta-instance, which has the properties packaged in the meta-class M.
 
-      In Python, instantiating a meta-class would have looked like this:
+      In Python, instantiating a meta-class would have looked like that:
 
       >>> A = M()                          # 'A' is the 1st instance of M
       >>> A                                # What is 'A'?
@@ -246,11 +246,11 @@ programming model, examples and, perhaps, more popular terms.
 
 --------
 
-   Triple congratulations on getting this far!
+   Triple congratulations on getting that far!
    Now you know everything about meta-classes and the Real-World!
 
 <unless-wizards-want-meta-classes-be-instances-of-mysterious-objects!>
 
 -- 
        Vladimir MARANGOZOV          | Vladimir.Marangozov@inrialpes.fr
-http://sirac.inrialpes.fr/~marangoz | tel:(+33-4)76615277 fax:76615252
+http://sirac.inrialpes.fr/~marangoz | tel:(+33-4)766154.0 fax:76615252

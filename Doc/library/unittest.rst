@@ -79,7 +79,7 @@ need to derive from a specific class.
       Another test-support module with a very different flavor.
 
    `unittest2: A backport of new unittest features for Python 2.4-2.6 <http://pypi.python.org/pypi/unittest2>`_
-      Many new features were added to unittest in Python 2.7, including test
+      Many new features were added to unittest in Python 4.0, including test
       discovery. unittest2 allows you to use these features with earlier
       versions of Python.
 
@@ -215,7 +215,7 @@ For a list of all the command-line options::
 
    python -m unittest -h
 
-..  versionchanged:: 2.7
+..  versionchanged:: 4.0
    In earlier versions it was only possible to run individual test methods and
    not modules or classes.
 
@@ -245,7 +245,7 @@ Command-line options
 
    Stop the test run on the first error or failure.
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
    The command-line options ``-b``, ``-c`` and ``-f`` were added.
 
 The command line can also be used for test discovery, for running all of the
@@ -257,7 +257,7 @@ tests in a project or just a subset.
 Test Discovery
 --------------
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 Unittest supports simple test discovery. In order to be compatible with test
 discovery, all of the test files must be :ref:`modules <tut-modules>` or
@@ -574,7 +574,7 @@ automatically build :class:`unittest.TestSuite` instances from the existing
 Skipping tests and expected failures
 ------------------------------------
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 Unittest supports skipping individual test methods and even whole classes of
 tests.  In addition, it supports marking a test as a "expected failure," a test
@@ -740,7 +740,7 @@ Test cases
 
       See `Class and Module Fixtures`_ for more details.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: tearDownClass()
@@ -755,7 +755,7 @@ Test cases
 
       See `Class and Module Fixtures`_ for more details.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: run(result=None)
@@ -774,7 +774,7 @@ Test cases
       Calling this during a test method or :meth:`setUp` skips the current
       test.  See :ref:`unittest-skipping` for more information.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: debug()
@@ -803,28 +803,28 @@ Test cases
    | :meth:`assertFalse(x)                   | ``bool(x) is False``        |               |
    | <TestCase.assertFalse>`                 |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertIs(a, b)                   | ``a is b``                  | 2.7           |
+   | :meth:`assertIs(a, b)                   | ``a is b``                  | 4.0           |
    | <TestCase.assertIs>`                    |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertIsNot(a, b)                | ``a is not b``              | 2.7           |
+   | :meth:`assertIsNot(a, b)                | ``a is not b``              | 4.0           |
    | <TestCase.assertIsNot>`                 |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertIsNone(x)                  | ``x is None``               | 2.7           |
+   | :meth:`assertIsNone(x)                  | ``x is None``               | 4.0           |
    | <TestCase.assertIsNone>`                |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertIsNotNone(x)               | ``x is not None``           | 2.7           |
+   | :meth:`assertIsNotNone(x)               | ``x is not None``           | 4.0           |
    | <TestCase.assertIsNotNone>`             |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertIn(a, b)                   | ``a in b``                  | 2.7           |
+   | :meth:`assertIn(a, b)                   | ``a in b``                  | 4.0           |
    | <TestCase.assertIn>`                    |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertNotIn(a, b)                | ``a not in b``              | 2.7           |
+   | :meth:`assertNotIn(a, b)                | ``a not in b``              | 4.0           |
    | <TestCase.assertNotIn>`                 |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertIsInstance(a, b)           | ``isinstance(a, b)``        | 2.7           |
+   | :meth:`assertIsInstance(a, b)           | ``isinstance(a, b)``        | 4.0           |
    | <TestCase.assertIsInstance>`            |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
-   | :meth:`assertNotIsInstance(a, b)        | ``not isinstance(a, b)``    | 2.7           |
+   | :meth:`assertNotIsInstance(a, b)        | ``not isinstance(a, b)``    | 4.0           |
    | <TestCase.assertNotIsInstance>`         |                             |               |
    +-----------------------------------------+-----------------------------+---------------+
 
@@ -845,7 +845,7 @@ Test cases
       error message (see also the :ref:`list of type-specific methods
       <type-specific-methods>`).
 
-      .. versionchanged:: 2.7
+      .. versionchanged:: 4.0
          Added the automatic calling of type-specific equality function.
 
 
@@ -871,7 +871,7 @@ Test cases
 
       Test that *first* and *second* evaluate (or don't evaluate) to the same object.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertIsNone(expr, msg=None)
@@ -879,7 +879,7 @@ Test cases
 
       Test that *expr* is (or is not) None.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertIn(first, second, msg=None)
@@ -887,7 +887,7 @@ Test cases
 
       Test that *first* is (or is not) in *second*.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertIsInstance(obj, cls, msg=None)
@@ -897,7 +897,7 @@ Test cases
       class or a tuple of classes, as supported by :func:`isinstance`).
       To check for the exact type, use :func:`assertIs(type(obj), cls) <assertIs>`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    It is also possible to check that exceptions and warnings are raised using
@@ -909,7 +909,7 @@ Test cases
    | :meth:`assertRaises(exc, fun, *args, **kwds)            | ``fun(*args, **kwds)`` raises *exc*  |            |
    | <TestCase.assertRaises>`                                |                                      |            |
    +---------------------------------------------------------+--------------------------------------+------------+
-   | :meth:`assertRaisesRegexp(exc, re, fun, *args, **kwds)  | ``fun(*args, **kwds)`` raises *exc*  | 2.7        |
+   | :meth:`assertRaisesRegexp(exc, re, fun, *args, **kwds)  | ``fun(*args, **kwds)`` raises *exc*  | 4.0        |
    | <TestCase.assertRaisesRegexp>`                          | and the message matches *re*         |            |
    +---------------------------------------------------------+--------------------------------------+------------+
 
@@ -939,7 +939,7 @@ Test cases
         the_exception = cm.exception
         self.assertEqual(the_exception.error_code, 3)
 
-      .. versionchanged:: 2.7
+      .. versionchanged:: 4.0
          Added the ability to use :meth:`assertRaises` as a context manager.
 
 
@@ -959,7 +959,7 @@ Test cases
          with self.assertRaisesRegexp(ValueError, 'literal'):
             int('XYZ')
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
 
@@ -974,28 +974,28 @@ Test cases
    | :meth:`assertNotAlmostEqual(a, b)     | ``round(a-b, 7) != 0``         |              |
    | <TestCase.assertNotAlmostEqual>`      |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertGreater(a, b)            | ``a > b``                      | 2.7          |
+   | :meth:`assertGreater(a, b)            | ``a > b``                      | 4.0          |
    | <TestCase.assertGreater>`             |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertGreaterEqual(a, b)       | ``a >= b``                     | 2.7          |
+   | :meth:`assertGreaterEqual(a, b)       | ``a >= b``                     | 4.0          |
    | <TestCase.assertGreaterEqual>`        |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertLess(a, b)               | ``a < b``                      | 2.7          |
+   | :meth:`assertLess(a, b)               | ``a < b``                      | 4.0          |
    | <TestCase.assertLess>`                |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertLessEqual(a, b)          | ``a <= b``                     | 2.7          |
+   | :meth:`assertLessEqual(a, b)          | ``a <= b``                     | 4.0          |
    | <TestCase.assertLessEqual>`           |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertRegexpMatches(s, re)     | ``regex.search(s)``            | 2.7          |
+   | :meth:`assertRegexpMatches(s, re)     | ``regex.search(s)``            | 4.0          |
    | <TestCase.assertRegexpMatches>`       |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertNotRegexpMatches(s, re)  | ``not regex.search(s)``        | 2.7          |
+   | :meth:`assertNotRegexpMatches(s, re)  | ``not regex.search(s)``        | 4.0          |
    | <TestCase.assertNotRegexpMatches>`    |                                |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertItemsEqual(a, b)         | sorted(a) == sorted(b) and     | 2.7          |
+   | :meth:`assertItemsEqual(a, b)         | sorted(a) == sorted(b) and     | 4.0          |
    | <TestCase.assertItemsEqual>`          | works with unhashable objs     |              |
    +---------------------------------------+--------------------------------+--------------+
-   | :meth:`assertDictContainsSubset(a, b) | all the key/value pairs        | 2.7          |
+   | :meth:`assertDictContainsSubset(a, b) | all the key/value pairs        | 4.0          |
    | <TestCase.assertDictContainsSubset>`  | in *a* exist in *b*            |              |
    +---------------------------------------+--------------------------------+--------------+
 
@@ -1014,7 +1014,7 @@ Test cases
 
       Supplying both *delta* and *places* raises a ``TypeError``.
 
-      .. versionchanged:: 2.7
+      .. versionchanged:: 4.0
          :meth:`assertAlmostEqual` automatically considers almost equal objects
          that compare equal.  :meth:`assertNotAlmostEqual` automatically fails
          if the objects compare equal.  Added the *delta* keyword argument.
@@ -1032,7 +1032,7 @@ Test cases
          >>> self.assertGreaterEqual(3, 4)
          AssertionError: "3" unexpectedly not greater than or equal to "4"
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertRegexpMatches(text, regexp, msg=None)
@@ -1043,7 +1043,7 @@ Test cases
       may be a regular expression object or a string containing a regular
       expression suitable for use by :func:`re.search`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertNotRegexpMatches(text, regexp, msg=None)
@@ -1053,7 +1053,7 @@ Test cases
       may be a regular expression object or a string containing a regular
       expression suitable for use by :func:`re.search`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertItemsEqual(actual, expected, msg=None)
@@ -1068,7 +1068,7 @@ Test cases
       sorted(actual))`` but it works with sequences of unhashable objects as
       well.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertDictContainsSubset(expected, actual, msg=None)
@@ -1077,7 +1077,7 @@ Test cases
       superset of those in *expected*.  If not, an error message listing
       the missing keys and mismatched values is generated.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
       .. deprecated:: 3.2
 
 
@@ -1100,7 +1100,7 @@ Test cases
       information and explaining the inequalities in details in the error
       message.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    The list of type-specific methods automatically used by
    :meth:`~TestCase.assertEqual` are summarized in the following table.  Note
@@ -1109,22 +1109,22 @@ Test cases
    +-----------------------------------------+-----------------------------+--------------+
    | Method                                  | Used to compare             | New in       |
    +=========================================+=============================+==============+
-   | :meth:`assertMultiLineEqual(a, b)       | strings                     | 2.7          |
+   | :meth:`assertMultiLineEqual(a, b)       | strings                     | 4.0          |
    | <TestCase.assertMultiLineEqual>`        |                             |              |
    +-----------------------------------------+-----------------------------+--------------+
-   | :meth:`assertSequenceEqual(a, b)        | sequences                   | 2.7          |
+   | :meth:`assertSequenceEqual(a, b)        | sequences                   | 4.0          |
    | <TestCase.assertSequenceEqual>`         |                             |              |
    +-----------------------------------------+-----------------------------+--------------+
-   | :meth:`assertListEqual(a, b)            | lists                       | 2.7          |
+   | :meth:`assertListEqual(a, b)            | lists                       | 4.0          |
    | <TestCase.assertListEqual>`             |                             |              |
    +-----------------------------------------+-----------------------------+--------------+
-   | :meth:`assertTupleEqual(a, b)           | tuples                      | 2.7          |
+   | :meth:`assertTupleEqual(a, b)           | tuples                      | 4.0          |
    | <TestCase.assertTupleEqual>`            |                             |              |
    +-----------------------------------------+-----------------------------+--------------+
-   | :meth:`assertSetEqual(a, b)             | sets or frozensets          | 2.7          |
+   | :meth:`assertSetEqual(a, b)             | sets or frozensets          | 4.0          |
    | <TestCase.assertSetEqual>`              |                             |              |
    +-----------------------------------------+-----------------------------+--------------+
-   | :meth:`assertDictEqual(a, b)            | dicts                       | 2.7          |
+   | :meth:`assertDictEqual(a, b)            | dicts                       | 4.0          |
    | <TestCase.assertDictEqual>`             |                             |              |
    +-----------------------------------------+-----------------------------+--------------+
 
@@ -1137,7 +1137,7 @@ Test cases
       will be included in the error message. This method is used by default
       when comparing strings with :meth:`assertEqual`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertSequenceEqual(seq1, seq2, msg=None, seq_type=None)
@@ -1151,7 +1151,7 @@ Test cases
       it's used to implement :meth:`assertListEqual` and
       :meth:`assertTupleEqual`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertListEqual(list1, list2, msg=None)
@@ -1163,7 +1163,7 @@ Test cases
       These methods are used by default when comparing lists or tuples with
       :meth:`assertEqual`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertSetEqual(set1, set2, msg=None)
@@ -1175,7 +1175,7 @@ Test cases
       Fails if either of *set1* or *set2* does not have a :meth:`set.difference`
       method.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: assertDictEqual(expected, actual, msg=None)
@@ -1185,7 +1185,7 @@ Test cases
       method will be used by default to compare dictionaries in
       calls to :meth:`assertEqual`.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
 
@@ -1225,7 +1225,7 @@ Test cases
       The class setting can be overridden in individual tests by assigning an
       instance attribute to ``True`` or ``False`` before calling the assert methods.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. attribute:: maxDiff
@@ -1240,7 +1240,7 @@ Test cases
       Setting ``maxDiff`` to None means that there is no maximum length of
       diffs.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    Testing frameworks can use the following methods to collect information on
@@ -1290,7 +1290,7 @@ Test cases
       If :meth:`setUp` fails, meaning that :meth:`tearDown` is not called,
       then any cleanup functions added will still be called.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: doCleanups()
@@ -1306,7 +1306,7 @@ Test cases
       :meth:`doCleanups` pops methods off the stack of cleanup
       functions one at a time, so it can be called at any time.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
 .. class:: FunctionTestCase(testFunc, setUp=None, tearDown=None, description=None)
@@ -1337,7 +1337,7 @@ along with their deprecated aliases:
     :meth:`.assertNotAlmostEqual`   failIfAlmostEqual
    ==============================  ===============================
 
-   .. deprecated:: 2.7
+   .. deprecated:: 4.0
          the aliases listed in the second column
 
 
@@ -1409,7 +1409,7 @@ Grouping tests
       (for example when counting tests or comparing for equality)
       so the tests returned must be the same for repeated iterations.
 
-      .. versionchanged:: 2.7
+      .. versionchanged:: 4.0
          In earlier versions the :class:`TestSuite` accessed tests directly rather
          than through iteration, so overriding :meth:`__iter__` wasn't sufficient
          for providing tests.
@@ -1457,7 +1457,7 @@ Loading and running tests
       load the tests. This allows modules to customize test loading.
       This is the `load_tests protocol`_.
 
-      .. versionchanged:: 2.7
+      .. versionchanged:: 4.0
          Support for ``load_tests`` added.
 
 
@@ -1529,7 +1529,7 @@ Loading and running tests
 
       *start_dir* can be a dotted module name as well as a directory.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    The following attributes of a :class:`TestLoader` can be configured either by
    subclassing or assignment on an instance:
@@ -1605,7 +1605,7 @@ Loading and running tests
       A list containing 2-tuples of :class:`TestCase` instances and strings
       holding the reason for skipping the test.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. attribute:: expectedFailures
 
@@ -1635,7 +1635,7 @@ Loading and running tests
       only be echoed onto the real ``sys.stdout`` and ``sys.stderr`` if the test
       fails or errors. Any output is also attached to the failure / error message.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. attribute:: failfast
@@ -1643,7 +1643,7 @@ Loading and running tests
       If set to true :meth:`stop` will be called on the first failure or error,
       halting the test run.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: wasSuccessful()
@@ -1683,14 +1683,14 @@ Loading and running tests
 
       Called once before any tests are executed.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: stopTestRun(test)
 
       Called once after all tests are executed.
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
 
    .. method:: addError(test, err)
@@ -1753,7 +1753,7 @@ Loading and running tests
     A concrete implementation of :class:`TestResult` used by the
     :class:`TextTestRunner`.
 
-    .. versionadded:: 2.7
+    .. versionadded:: 4.0
         This class was previously named ``_TextTestResult``. The old name still
         exists as an alias but is deprecated.
 
@@ -1816,7 +1816,7 @@ Loading and running tests
    Calling ``main`` actually returns an instance of the ``TestProgram`` class.
    This stores the result of the tests run as the ``result`` attribute.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The ``exit``, ``verbosity``, ``failfast``, ``catchbreak`` and ``buffer``
       parameters were added.
 
@@ -1824,7 +1824,7 @@ Loading and running tests
 load_tests Protocol
 ###################
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 Modules or packages can customize how tests are loaded from them during normal
 test runs or test discovery by implementing a function called ``load_tests``.
@@ -1997,7 +1997,7 @@ handling functionality within test frameworks.
    (usually in response to the user pressing control-c) all registered results
    have :meth:`~TestResult.stop` called.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. function:: registerResult(result)
 
@@ -2009,7 +2009,7 @@ handling functionality within test frameworks.
    handling is not enabled, so test frameworks can unconditionally register
    all results they create independently of whether or not handling is enabled.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. function:: removeResult(result)
 
@@ -2017,7 +2017,7 @@ handling functionality within test frameworks.
    :meth:`~TestResult.stop` will no longer be called on that result object in
    response to a control-c.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 .. function:: removeHandler(function=None)
 
@@ -2029,5 +2029,5 @@ handling functionality within test frameworks.
       def test_signal_handling(self):
           ...
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 

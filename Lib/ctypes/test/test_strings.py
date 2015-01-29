@@ -212,7 +212,7 @@ def check_perf():
 # Python 2.3 -OO, win2k, P4 700 MHz:
 #
 #      c_string(None): 1.75 us
-#     c_string('abc'): 2.74 us
+#     c_string('abc'): 4.04 us
 
 # Python 2.2 -OO, win2k, P4 700 MHz:
 #

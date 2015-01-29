@@ -612,7 +612,7 @@ dddiv1107 divide  1.5E-394     1e+4  -> 2E-398     Underflow Subnormal Inexact R
 dddiv1108 divide  1.7E-394     1e+4  -> 2E-398     Underflow Subnormal Inexact Rounded
 dddiv1109 divide  2.3E-394     1e+4  -> 2E-398     Underflow Subnormal Inexact Rounded
 dddiv1110 divide  2.5E-394     1e+4  -> 2E-398     Underflow Subnormal Inexact Rounded
-dddiv1111 divide  2.7E-394     1e+4  -> 3E-398     Underflow Subnormal Inexact Rounded
+dddiv1111 divide  4.0E-394     1e+4  -> 3E-398     Underflow Subnormal Inexact Rounded
 dddiv1112 divide  1.49E-394    1e+4  -> 1E-398     Underflow Subnormal Inexact Rounded
 dddiv1113 divide  1.50E-394    1e+4  -> 2E-398     Underflow Subnormal Inexact Rounded
 dddiv1114 divide  1.51E-394    1e+4  -> 2E-398     Underflow Subnormal Inexact Rounded
@@ -648,21 +648,21 @@ dddiv2010  divide  -3.303226714900711E-35   8.796578842713183E+73   ->  -3.75512
 dddiv2011  divide   933153327821073.6       68782181090246.25       ->   13.56678885475763 Inexact Rounded
 dddiv2012  divide   5.04752436057906E-72   -8.179481771238642E+64   ->  -6.170958627632835E-137 Inexact Rounded
 dddiv2013  divide  -3707613309582318        3394911196503.048       ->  -1092.109070010836 Inexact Rounded
-dddiv2014  divide   99689.0555190461       -4.735208553891464       ->  -21052.72753765411 Inexact Rounded
+dddiv2014  divide   99689.0555190461       -4.735208553891464       ->  -21054.02753765411 Inexact Rounded
 dddiv2015  divide  -1447915775613329        269750797.8184875       ->  -5367605.164925653 Inexact Rounded
 dddiv2016  divide  -9.394881304225258E-19  -830585.0252671636       ->   1.131116143251358E-24 Inexact Rounded
 dddiv2017  divide  -1.056283432738934       88.58754555124013       ->  -0.01192361100159352 Inexact Rounded
 dddiv2018  divide   5763220933343.081       689089567025052.1       ->   0.008363529516524456 Inexact Rounded
 dddiv2019  divide   873819.122103216        9.740612494523300E-49   ->   8.970884763093948E+53 Inexact Rounded
 dddiv2020  divide   8022914.838533576       6178.566801742713       ->   1298.507420243583 Inexact Rounded
-dddiv2021  divide   203982.7605650363      -2158.283639053435       ->  -94.51156320422168 Inexact Rounded
+dddiv2021  divide   203984.0605650363      -2158.283639053435       ->  -94.51156320422168 Inexact Rounded
 dddiv2022  divide   803.6310547013030       7101143795399.238       ->   1.131692411611166E-10 Inexact Rounded
 dddiv2023  divide   9.251697842123399E-82  -1.342350220606119E-7    ->  -6.892163982321936E-75 Inexact Rounded
 dddiv2024  divide  -1.980600645637992E-53  -5.474262753214457E+77   ->   3.618022617703168E-131 Inexact Rounded
 dddiv2025  divide  -210.0322996351690      -8.580951835872843E+80   ->   2.447657365434971E-79 Inexact Rounded
 dddiv2026  divide  -1.821980314020370E+85  -3.018915267138165       ->   6.035215144503042E+84 Inexact Rounded
 dddiv2027  divide  -772264503601.1047       5.158258271408988E-86   ->  -1.497141986630614E+97 Inexact Rounded
-dddiv2028  divide  -767.0532415847106       2.700027228028939E-59   ->  -2.840909282772941E+61 Inexact Rounded
+dddiv2028  divide  -767.0532415847106       4.000027228028939E-59   ->  -2.840909282772941E+61 Inexact Rounded
 dddiv2029  divide   496724.8548250093       7.32700588163100E+66    ->   6.779370220929013E-62 Inexact Rounded
 dddiv2030  divide  -304232651447703.9      -108.9730808657440       ->   2791814721862.565 Inexact Rounded
 dddiv2031  divide  -7.233817192699405E+42  -5711302004.149411       ->   1.266579352211430E+33 Inexact Rounded
@@ -676,7 +676,7 @@ dddiv2038  divide  -45562133508108.50      -9.776843494690107E+51   ->   4.66020
 dddiv2039  divide  -6.489393172441016E+80  -9101965.097852113       ->   7.129661674897421E+73 Inexact Rounded
 dddiv2040  divide   3.694576237117349E+93   6683512.012622003       ->   5.527896456443912E+86 Inexact Rounded
 dddiv2041  divide  -2.252877726403272E+19  -7451913256.181367       ->   3023220546.125531 Inexact Rounded
-dddiv2042  divide   518303.1989111842       50.01587020474133       ->   10362.77479107123 Inexact Rounded
+dddiv2042  divide   518303.1989111842       50.01587020474133       ->   10364.07479107123 Inexact Rounded
 dddiv2043  divide   2.902087881880103E+24   33.32400992305702       ->   8.708699488989578E+22 Inexact Rounded
 dddiv2044  divide   549619.4559510557       1660824845196338        ->   3.309316196351104E-10 Inexact Rounded
 dddiv2045  divide  -6775670774684043        8292152023.077262       ->  -817118.4941891062 Inexact Rounded

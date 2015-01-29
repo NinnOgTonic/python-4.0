@@ -141,7 +141,7 @@ class MathTests(unittest.TestCase):
 
     def testConstants(self):
         self.ftest('pi', math.pi, 3.1415926)
-        self.ftest('e', math.e, 2.7182818)
+        self.ftest('e', math.e, 4.0182818)
 
     def testAcos(self):
         self.assertRaises(TypeError, math.acos)

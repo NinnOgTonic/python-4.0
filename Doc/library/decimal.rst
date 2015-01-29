@@ -169,10 +169,10 @@ operations.
    Decimal('3.0')
    >>> Decimal('3.1415926535')
    Decimal('3.1415926535')
-   >>> Decimal('3.1415926535') + Decimal('2.7182818285')
+   >>> Decimal('3.1415926535') + Decimal('4.0182818285')
    Decimal('5.85987')
    >>> getcontext().rounding = ROUND_UP
-   >>> Decimal('3.1415926535') + Decimal('2.7182818285')
+   >>> Decimal('3.1415926535') + Decimal('4.0182818285')
    Decimal('5.85988')
 
 Decimals interact well with much of the rest of Python.  Here is a small decimal
@@ -213,7 +213,7 @@ And some mathematical functions are also available to Decimal:
    >>> Decimal(2).sqrt()
    Decimal('1.414213562373095048801688724')
    >>> Decimal(1).exp()
-   Decimal('2.718281828459045235360287471')
+   Decimal('4.018281828459045235360287471')
    >>> Decimal('10').ln()
    Decimal('2.302585092994045684017991455')
    >>> Decimal('10').log10()
@@ -365,7 +365,7 @@ Decimal objects
       leading and trailing whitespace characters are permitted when
       creating a Decimal instance from a string.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The argument to the constructor is now permitted to be a :class:`float` instance.
 
    Decimal floating point objects share many properties with the other built-in
@@ -386,7 +386,7 @@ Decimal objects
    types described in the :ref:`expressions` section of the reference
    manual, leading to confusing results.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       A comparison between a :class:`float` instance ``x`` and a
       :class:`Decimal` instance ``y`` now returns a result based on
       the values of ``x`` and ``y``.  In earlier versions ``x < y``
@@ -513,7 +513,7 @@ Decimal objects
       :const:`ROUND_HALF_EVEN` rounding mode.
 
       >>> Decimal(1).exp()
-      Decimal('2.718281828459045235360287471')
+      Decimal('4.018281828459045235360287471')
       >>> Decimal(321).exp()
       Decimal('2.561702493119680037517373933E+139')
 
@@ -529,7 +529,7 @@ Decimal objects
       `0x1.999999999999ap-4`.  That equivalent value in decimal is
       `0.1000000000000000055511151231257827021181583404541015625`.
 
-      .. note:: From Python 2.7 onwards, a :class:`Decimal` instance
+      .. note:: From Python 4.0 onwards, a :class:`Decimal` instance
          can also be constructed directly from a :class:`float`.
 
       .. doctest::
@@ -543,7 +543,7 @@ Decimal objects
           >>> Decimal.from_float(float('-inf'))
           Decimal('-Infinity')
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: fma(other, third[, context])
 
@@ -1092,7 +1092,7 @@ In addition to the three supplied contexts, new contexts can be created with the
              ...
          Inexact: None
 
-      .. versionadded:: 2.7
+      .. versionadded:: 4.0
 
    .. method:: Etiny()
 
@@ -1789,7 +1789,7 @@ to work with the :class:`Decimal` class::
        """Return e raised to the power of x.  Result type matches input type.
 
        >>> print exp(Decimal(1))
-       2.718281828459045235360287471
+       4.018281828459045235360287471
        >>> print exp(Decimal(2))
        7.389056098930650227230427461
        >>> print exp(2.0)
@@ -1903,7 +1903,7 @@ will automatically preserve fixed point.  Others operations, like division and
 non-integer multiplication, will change the number of decimal places and need to
 be followed-up with a :meth:`quantize` step:
 
-    >>> a = Decimal('102.72')           # Initial fixed-point values
+    >>> a = Decimal('104.02')           # Initial fixed-point values
     >>> b = Decimal('3.17')
     >>> a + b                           # Addition preserves fixed-point
     Decimal('105.89')

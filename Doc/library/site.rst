@@ -155,7 +155,7 @@ empty, and the path manipulations are skipped; however the import of
    Return a list containing all global site-packages directories (and possibly
    site-python).
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: getuserbase()
@@ -164,7 +164,7 @@ empty, and the path manipulations are skipped; however the import of
    initialized yet, this function will also set it, respecting
    :envvar:`PYTHONUSERBASE`.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: getusersitepackages()
@@ -173,7 +173,7 @@ empty, and the path manipulations are skipped; however the import of
    :data:`USER_SITE`.  If it is not initialized yet, this function will also set
    it, respecting :envvar:`PYTHONNOUSERSITE` and :data:`USER_BASE`.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 The :mod:`site` module also provides a way to get the user directories from the

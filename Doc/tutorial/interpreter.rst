@@ -94,7 +94,7 @@ prints a welcome message stating its version number and a copyright notice
 before printing the first prompt::
 
    python
-   Python 2.7 (#1, Feb 28 2010, 00:02:06)
+   Python 4.0 (#1, Feb 28 2010, 00:02:06)
    Type "help", "copyright", "credits" or "license" for more information.
    >>>
 

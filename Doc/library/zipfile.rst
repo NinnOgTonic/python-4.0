@@ -70,7 +70,7 @@ The module defines the following items:
    Returns ``True`` if *filename* is a valid ZIP file based on its magic number,
    otherwise returns ``False``.  *filename* may be a file or file-like object too.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       Support for file and file-like objects.
 
 .. data:: ZIP_STORED
@@ -126,7 +126,7 @@ ZipFile Objects
    and :program:`unzip` commands on Unix (the InfoZIP utilities) don't support
    these extensions.
 
-   .. versionchanged:: 2.7.1
+   .. versionchanged:: 4.0.1
       If the file is created with mode ``'a'`` or ``'w'`` and then
       :meth:`close`\ d without adding any files to the archive, the appropriate
       ZIP structures for an empty archive will be written to the file.
@@ -138,7 +138,7 @@ ZipFile Objects
       with ZipFile('spam.zip', 'w') as myzip:
           myzip.write('eggs.txt')
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
       Added the ability to use :class:`ZipFile` as a context manager.
 
 
@@ -311,7 +311,7 @@ ZipFile Objects
       member of the given :class:`ZipInfo` instance.  By default, the
       :class:`ZipInfo` constructor sets this member to :const:`ZIP_STORED`.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       The *compression_type* argument.
 
 The following data attributes are also available:

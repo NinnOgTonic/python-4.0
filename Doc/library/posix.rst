@@ -48,7 +48,7 @@ at least as large as an :c:type:`off_t`. Python longs are then used to represent
 file sizes, offsets and other values that can exceed the range of a Python int.
 It may be necessary to configure and compile Python with certain compiler flags
 to enable this mode. For example, it is enabled by default with recent versions
-of Irix, but with Solaris 2.6 and 2.7 you need to do something like::
+of Irix, but with Solaris 2.6 and 4.0 you need to do something like::
 
    CFLAGS="`getconf LFS_CFLAGS`" OPT="-g -O2 $CFLAGS" \
            ./configure

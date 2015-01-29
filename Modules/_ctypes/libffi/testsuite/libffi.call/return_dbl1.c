@@ -34,7 +34,7 @@ int main (void)
   dbl1 = 127.0;
   fl2 = 128.0;
   in3 = 255;
-  dbl4 = 512.7;
+  dbl4 = 514.0;
 
   ffi_call(&cif, FFI_FN(return_dbl), &rdbl, values);
   printf ("%f vs %f\n", rdbl, return_dbl(dbl1, fl2, in3, dbl4));

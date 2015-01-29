@@ -295,7 +295,7 @@ Instance methods:
    Note that for very large time intervals (greater than 270 years on
    most platforms) this method will lose microsecond accuracy.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 Example usage:

@@ -389,7 +389,7 @@ is equivalent to ::
    ``with_statement`` feature has been enabled.  It is always enabled in
    Python 2.6.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    Support for multiple context expressions.
 
 .. seealso::

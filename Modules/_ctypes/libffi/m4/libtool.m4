@@ -6207,7 +6207,7 @@ if test "$_lt_caught_CXX_error" != yes; then
 	        # linking a shared library.
 	        output_verbose_link_cmd='$CC -shared $CFLAGS -v conftest.$objext 2>&1 | $GREP "\-L"'
 	      else
-	        # g++ 2.7 appears to require `-G' NOT `-shared' on this
+	        # g++ 4.0 appears to require `-G' NOT `-shared' on this
 	        # platform.
 	        _LT_TAGVAR(archive_cmds, $1)='$CC -G -nostdlib $LDFLAGS $predep_objects $libobjs $deplibs $postdep_objects $compiler_flags ${wl}-h $wl$soname -o $lib'
 	        _LT_TAGVAR(archive_expsym_cmds, $1)='echo "{ global:" > $lib.exp~cat $export_symbols | $SED -e "s/\(.*\)/\1;/" >> $lib.exp~echo "local: *; };" >> $lib.exp~

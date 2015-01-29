@@ -8,7 +8,7 @@
 .. index::
    single: configuration information
 
-.. versionadded:: 2.7
+.. versionadded:: 4.0
 
 **Source code:** :source:`Lib/sysconfig.py`
 

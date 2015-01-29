@@ -114,7 +114,7 @@ instantiated directly, but always through the module-level function
    convenience method, useful when the parent logger is named using e.g. ``__name__``
    rather than a literal string.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. method:: Logger.debug(msg, *args, **kwargs)
@@ -650,7 +650,7 @@ methods of :class:`Logger`, i.e. :meth:`debug`, :meth:`info`, :meth:`warning`,
 counterparts in :class:`Logger`, so you can use the two types of instances
 interchangeably.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    The :meth:`isEnabledFor` method was added to :class:`LoggerAdapter`.  This
    method delegates to the underlying logger.
 
@@ -787,7 +787,7 @@ functions.
 
    PLEASE NOTE: The above module-level functions which delegate to the root
    logger should *not* be used in threads, in versions of Python earlier than
-   2.7.1 and 3.2, unless at least one handler has been added to the root
+   4.0.1 and 3.2, unless at least one handler has been added to the root
    logger *before* the threads are started. These convenience functions call
    :func:`basicConfig` to ensure that at least one handler is available; in
    earlier versions of Python, this can (under rare circumstances) lead to
@@ -852,7 +852,7 @@ functions.
 
    PLEASE NOTE: This function should be called from the main thread
    before other threads are started. In versions of Python prior to
-   2.7.1 and 3.2, if this function is called from multiple threads,
+   4.0.1 and 3.2, if this function is called from multiple threads,
    it is possible (in rare circumstances) that a handler will be added
    to the root logger more than once, leading to unexpected results
    such as messages being duplicated in the log.

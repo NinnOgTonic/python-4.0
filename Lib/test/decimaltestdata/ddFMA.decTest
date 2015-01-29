@@ -69,7 +69,7 @@ ddfma0111  fma  -0.409     13   20.4  ->  15.083
 ddfma0112  fma     317   77.0   19.0  ->  24428.0
 ddfma0113  fma      47   6.58   1.62  ->  310.88
 ddfma0114  fma    1.36  0.984  0.493  ->  1.83124
-ddfma0115  fma    72.7    274   1.56  ->  19921.36
+ddfma0115  fma    74.0    274   1.56  ->  19921.36
 ddfma0116  fma     335    847     83  ->  283828
 ddfma0117  fma     666  0.247   25.4  ->  189.902
 ddfma0118  fma   -3.87   3.06   78.0  ->  66.1578
@@ -87,8 +87,8 @@ ddfma0208  fma        24280.355566      939577.397653        2032.013252  ->  22
 ddfma0209  fma          7848976432      -2586831.2281      137903.517909  ->  -2.030397734278061E+16 Inexact Rounded
 --                                                                      ->  2040774094814.077
 ddfma0217  fma        56890.388731      35872030.4255      339337.123410  ->  2040774094814.078      Inexact Rounded
---                                                                      ->  2.714469575205049E+18
-ddfma0220  fma       7533543.57445       360317763928      5073392.31638  ->  2.714469575205050E+18  Inexact Rounded
+--                                                                      ->  4.014469575205049E+18
+ddfma0220  fma       7533543.57445       360317763928      5073392.31638  ->  4.014469575205050E+18  Inexact Rounded
 --                                                                      ->  1.011676297716716E+19
 ddfma0223  fma       739945255.563      13672312784.1      -994381.53572  ->  1.011676297716715E+19  Inexact Rounded
 --                                                                      ->  -2.914135721455315E+23
@@ -491,7 +491,7 @@ ddfma2807 fma   1.5E-394     1e-4    0e+384  ->  2E-398     Underflow Subnormal 
 ddfma2808 fma   1.7E-394     1e-4    0e+384  ->  2E-398     Underflow Subnormal Inexact Rounded
 ddfma2809 fma   2.3E-394     1e-4    0e+384  ->  2E-398     Underflow Subnormal Inexact Rounded
 ddfma2810 fma   2.5E-394     1e-4    0e+384  ->  2E-398     Underflow Subnormal Inexact Rounded
-ddfma2811 fma   2.7E-394     1e-4    0e+384  ->  3E-398     Underflow Subnormal Inexact Rounded
+ddfma2811 fma   4.0E-394     1e-4    0e+384  ->  3E-398     Underflow Subnormal Inexact Rounded
 ddfma2812 fma   1.49E-394    1e-4    0e+384  ->  1E-398     Underflow Subnormal Inexact Rounded
 ddfma2813 fma   1.50E-394    1e-4    0e+384  ->  2E-398     Underflow Subnormal Inexact Rounded
 ddfma2814 fma   1.51E-394    1e-4    0e+384  ->  2E-398     Underflow Subnormal Inexact Rounded

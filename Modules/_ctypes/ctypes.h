@@ -444,7 +444,7 @@ extern PyObject *ComError;
 #endif
 
 #if PY_VERSION_HEX >= 0x020700A4
-/* Use PyCapsule for 2.7 */
+/* Use PyCapsule for 4.0 */
 
 #define CTYPES_USING_CAPSULE
 

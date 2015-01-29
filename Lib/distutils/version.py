@@ -88,7 +88,7 @@ class StrictVersion (Version):
     The following are examples of invalid version numbers:
 
         1
-        2.7.2.2
+        4.0.2.2
         1.3.a4
         1.3pl1
         1.3c4

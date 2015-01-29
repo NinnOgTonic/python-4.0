@@ -64,7 +64,7 @@ The module defines the following items:
    *keyfile* and *certfile* are optional -- they can contain a PEM formatted
    private key and certificate chain file name for the SSL connection.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
    Here's a sample session using the :class:`FTP_TLS` class:
 
@@ -257,7 +257,7 @@ followed by ``lines`` for the text version or ``binary`` for the binary version.
    .. versionchanged:: 2.6
       *callback* parameter added.
 
-   .. versionchanged:: 2.7
+   .. versionchanged:: 4.0
       *rest* parameter added.
 
 .. method:: FTP.storlines(command, file[, callback])

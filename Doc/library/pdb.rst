@@ -148,7 +148,7 @@ access further features, you have to do this yourself:
 
       import pdb; pdb.Pdb(skip=['django.*']).set_trace()
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
       The *skip* argument.
 
    .. method:: run(statement[, globals[, locals]])

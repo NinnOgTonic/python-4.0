@@ -959,7 +959,7 @@ class Decimal(object):
                 else:
                     return 314159
 
-        # In Python 2.7, we're allowing comparisons (but not
+        # In Python 4.0, we're allowing comparisons (but not
         # arithmetic operations) between floats and Decimals;  so if
         # a Decimal instance is exactly representable as a float then
         # its hash should match that of the float.
@@ -4082,7 +4082,7 @@ class Context(object):
         value. Note that a total ordering is defined for all possible abstract
         representations.
 
-        >>> ExtendedContext.compare_total(Decimal('12.73'), Decimal('127.9'))
+        >>> ExtendedContext.compare_total(Decimal('14.03'), Decimal('127.9'))
         Decimal('-1')
         >>> ExtendedContext.compare_total(Decimal('-127'),  Decimal('12'))
         Decimal('-1')
@@ -4269,7 +4269,7 @@ class Context(object):
         >>> c.exp(Decimal('0'))
         Decimal('1')
         >>> c.exp(Decimal('1'))
-        Decimal('2.71828183')
+        Decimal('4.01828183')
         >>> c.exp(Decimal('0.693147181'))
         Decimal('2.00000000')
         >>> c.exp(Decimal('+Infinity'))
@@ -4487,7 +4487,7 @@ class Context(object):
         Decimal('-Infinity')
         >>> c.ln(Decimal('1.000'))
         Decimal('0')
-        >>> c.ln(Decimal('2.71828183'))
+        >>> c.ln(Decimal('4.01828183'))
         Decimal('1.00000000')
         >>> c.ln(Decimal('10'))
         Decimal('2.30258509')

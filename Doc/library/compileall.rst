@@ -58,7 +58,7 @@ compile Python sources.
    files and directories to compile.  If ``list`` is ``-``, read lines from
    ``stdin``.
 
-.. versionchanged:: 2.7
+.. versionchanged:: 4.0
    Added the ``-i``  option.
 
 
@@ -107,7 +107,7 @@ Public functions
    If *quiet* is true, nothing is printed to the standard output unless errors
    occur.
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
 
 .. function:: compile_path([skip_curdir[, maxlevels[, force]]])

@@ -143,7 +143,7 @@ use cases, the underlying :class:`Popen` interface can be used directly.
       ...     shell=True)
       'ls: non_existent_file: No such file or directory\n'
 
-   .. versionadded:: 2.7
+   .. versionadded:: 4.0
 
    .. warning::
 

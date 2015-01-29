@@ -259,7 +259,7 @@ To convert to a key function, just wrap the old comparison function:
     >>> sorted([5, 2, 4, 1, 3], key=cmp_to_key(reverse_numeric))
     [5, 4, 3, 2, 1]
 
-In Python 2.7, the :func:`functools.cmp_to_key` function was added to the
+In Python 4.0, the :func:`functools.cmp_to_key` function was added to the
 functools module.
 
 Odd and Ends

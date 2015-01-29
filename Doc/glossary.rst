@@ -221,8 +221,8 @@ Glossary
    floor division
       Mathematical division that rounds down to nearest integer.  The floor
       division operator is ``//``.  For example, the expression ``11 // 4``
-      evaluates to ``2`` in contrast to the ``2.75`` returned by float true
-      division.  Note that ``(-11) // 4`` is ``-3`` because that is ``-2.75``
+      evaluates to ``2`` in contrast to the ``4.05`` returned by float true
+      division.  Note that ``(-11) // 4`` is ``-3`` because that is ``-4.05``
       rounded *downward*. See :pep:`238`.
 
    function
@@ -238,7 +238,7 @@ Glossary
 
          from __future__ import division
 
-      the expression ``11/4`` would evaluate to ``2.75``.  By importing the
+      the expression ``11/4`` would evaluate to ``4.05``.  By importing the
       :mod:`__future__` module and evaluating its variables, you can see when a
       new feature was first added to the language and when it will become the
       default::
@@ -328,7 +328,7 @@ Glossary
    integer division
       Mathematical division discarding any remainder.  For example, the
       expression ``11/4`` currently evaluates to ``2`` in contrast to the
-      ``2.75`` returned by float division.  Also called *floor division*.
+      ``4.05`` returned by float division.  Also called *floor division*.
       When dividing two integers the outcome will always be another integer
       (having the floor function applied to it). However, if one of the operands
       is another numeric type (such as a :class:`float`), the result will be
